@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/**
+ * LenderLens visual language.
+ *
+ * A near-neutral dark surface with one accent, the palette risk and compliance
+ * tools use because it keeps attention on the evidence rather than on the
+ * interface. Three rules govern colour here:
+ *
+ *   1. Signal colours mean exactly one thing each and appear nowhere else.
+ *      Emerald = corroborated. Amber = unresolved. Rose = contradicted.
+ *      Slate = no evidence either way. A colour used decoratively would make
+ *      the verdict colours stop reading as information.
+ *
+ *   2. Every coloured element also carries a word, so the meaning survives for
+ *      a reader who cannot rely on hue.
+ *
+ *   3. No gradients as decoration, no glow, no glass. One faint radial wash
+ *      behind the hero and nothing else.
+ */
+
+:root {
+  --surface-0: #0a0c10;
+  --surface-1: #101318;
+  --surface-2: #161a21;
+  --border: #232833;
+  --border-strong: #2e3441;
+
+  --text-primary: #e8ecf2;
+  --text-secondary: #99a3b3;
+  --text-muted: #6b7482;
+
+  --accent: #3b6fe0;
+  --accent-soft: #1c2c4d;
+
+  /* Signal colours. Each means one thing and appears nowhere else. */
+  --signal-good: #34d399;
+  --signal-warn: #f0b429;
+  --signal-bad: #ef6b6b;
+  --signal-neutral: #7c8798;
+}
+
+@theme inline {
+  --color-background: var(--surface-0);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono-stack);
+}
+
+body {
+  background: var(--surface-0);
+  color: var(--text-primary);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "cv05", "ss01";
+}
+
+/* A single restrained wash behind the hero. Not a gradient background. */
+.hero-wash {
+  background:
+    radial-gradient(58rem 28rem at 50% -14%, rgb(59 111 224 / 0.13), transparent 68%),
+    radial-gradient(36rem 20rem at 88% 4%, rgb(52 211 153 / 0.05), transparent 70%);
+}
+
+/* Identifiers, amounts and metrics line up when they are tabular. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono-stack), ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+.numeric {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Section eyebrow: small, spaced, quiet. Used for every panel heading. */
+.eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Hairline rules that read as structure rather than decoration. */
+.rule {
+  border-color: var(--border);
+}
+
+/* The verification sequence: one row per stage, revealed as it completes. */
+@keyframes stage-in {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.stage-in {
+  animation: stage-in 220ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus visible everywhere, at a contrast that survives the dark surface. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

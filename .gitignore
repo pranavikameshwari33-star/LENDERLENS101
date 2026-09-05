@@ -1,0 +1,78 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# raw RBI datasets
+# The workbooks are large binaries and are only needed at import time, never at
+# runtime. Keep them locally in data/ and out of version control.
+/data/*.XLSX
+/data/*.xlsx
+/data/*.xls
+dataset_report.txt
+dataset-report.txt
+
+# Python virtual environment
+# This project directory doubles as a venv (Lib/site-packages and the pip
+# executables under Scripts/), which is how the workbooks were first inspected.
+# The TypeScript files in scripts/ are part of the project and must stay
+# tracked, so only the venv artefacts are excluded.
+/Lib/
+pip*.exe
+python*.exe
+pyvenv.cfg
+
+# --- LenderLens ---------------------------------------------------------------
+# The training pairs are a 60 MB intermediate, fully reproducible from the
+# committed entity index with `npm run ml:pairs` (fixed seed, identical output).
+# The MODEL and METRICS artifacts it produces are committed, because the
+# application reads them at runtime.
+/ml/data/
+
+# The compiled entity index (data/index/) and the Banks-in-India snapshot
+# (data/rbi_banks.json) are deliberately NOT ignored: they are what the
+# application reads on every request, and a deployment has no workbooks to
+# rebuild them from.
+
+# More Python-prefix leftovers. `Scripts/` collides with this project's own
+# `scripts/` on a case-insensitive filesystem, so the executables are excluded
+# by name rather than by directory.
+*.exe

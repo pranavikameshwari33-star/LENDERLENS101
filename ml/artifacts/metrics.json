@@ -1,0 +1,1991 @@
+{
+  "modelVersion": "entity-match-gradient_boosting-1",
+  "algorithm": "gradient_boosting",
+  "trainedAt": "2026-08-29T07:49:52Z",
+  "task": {
+    "name": "entity identity resolution",
+    "positiveClass": "the claimed lender name and the candidate RBI entity are the same institution",
+    "negativeClass": "they are different institutions",
+    "notFraudDetection": "No label in this dataset records fraud. The model resolves identity; regulatory standing, digital identity, loan terms and scam signals are decided by deterministic rules elsewhere in the system."
+  },
+  "dataset": {
+    "pairs": 229420,
+    "features": 19,
+    "featureNames": [
+      "exact_normalized_match",
+      "exact_core_match",
+      "alternate_name_match",
+      "token_jaccard",
+      "token_containment",
+      "idf_weighted_overlap",
+      "trigram_core",
+      "trigram_full",
+      "jaro_winkler",
+      "edit_similarity",
+      "prefix_ratio",
+      "length_ratio",
+      "token_count_gap",
+      "first_token_match",
+      "acronym_match",
+      "shared_rare_token",
+      "unmatched_rare_query_token",
+      "unmatched_rare_entity_token",
+      "digit_token_agreement"
+    ],
+    "randomSeed": 20260629,
+    "splitStrategy": "Grouped by the first distinctive word of a company name, then groups assigned to train/validation/test by a seeded hash. Hard negatives are retrieved from a per-split index, so no pair crosses the boundary.",
+    "splits": {
+      "train": {
+        "pairs": 161089,
+        "positive": 26056,
+        "negative": 135033,
+        "positiveShare": 0.16174909522065442,
+        "groups": 3248
+      },
+      "validation": {
+        "pairs": 33444,
+        "positive": 5480,
+        "negative": 27964,
+        "positiveShare": 0.16385599808635332,
+        "groups": 689
+      },
+      "test": {
+        "pairs": 34887,
+        "positive": 5706,
+        "negative": 29181,
+        "positiveShare": 0.16355662567718635,
+        "groups": 715
+      }
+    },
+    "labelRule": "Two records are the same institution when they share a normalised name or a CIN. Ground truth therefore comes from the RBI data itself; no fraud label was invented."
+  },
+  "selection": {
+    "criterion": "Lowest assumed relative cost on the validation split, ties broken by F1. The test split was scored once, after selection.",
+    "candidates": [
+      {
+        "model": "logistic_regression",
+        "description": "Logistic regression on standardised features.",
+        "hyperparameters": {
+          "C": 1.0,
+          "max_iter": 2000,
+          "standardised": true
+        },
+        "selected_threshold": 0.93,
+        "validation": {
+          "threshold": 0.93,
+          "precision": 0.9961866307761328,
+          "recall": 0.8104014598540146,
+          "f1": 0.8937411954115516,
+          "accuracy": 0.9684248295658414,
+          "true_positives": 4441,
+          "true_negatives": 27947,
+          "false_positives": 17,
+          "false_negatives": 1039,
+          "support_positive": 5480,
+          "support_negative": 27964,
+          "relative_cost": {
+            "false_reassurance_weighted": 1209.0,
+            "missed_detection_weighted": 10407.0
+          },
+          "roc_auc": 0.9953326918237942,
+          "pr_auc": 0.981333484320069
+        }
+      },
+      {
+        "model": "random_forest",
+        "description": "Random forest, depth-capped so the exported artifact stays small.",
+        "hyperparameters": {
+          "n_estimators": 120,
+          "max_depth": 12,
+          "min_samples_leaf": 20
+        },
+        "selected_threshold": 0.78,
+        "validation": {
+          "threshold": 0.78,
+          "precision": 0.9931258354019477,
+          "recall": 0.9490875912408759,
+          "f1": 0.9706074461136512,
+          "accuracy": 0.9905812701829925,
+          "true_positives": 5201,
+          "true_negatives": 27928,
+          "false_positives": 36,
+          "false_negatives": 279,
+          "support_positive": 5480,
+          "support_negative": 27964,
+          "relative_cost": {
+            "false_reassurance_weighted": 639.0,
+            "missed_detection_weighted": 2826.0
+          },
+          "roc_auc": 0.999564883082211,
+          "pr_auc": 0.9973225868346514
+        }
+      },
+      {
+        "model": "gradient_boosting",
+        "description": "Gradient-boosted decision stumps of depth 3.",
+        "hyperparameters": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "learning_rate": 0.1
+        },
+        "selected_threshold": 0.91,
+        "validation": {
+          "threshold": 0.91,
+          "precision": 0.9951895324225515,
+          "recall": 0.9437956204379562,
+          "f1": 0.9688114638943524,
+          "accuracy": 0.990043057050592,
+          "true_positives": 5172,
+          "true_negatives": 27939,
+          "false_positives": 25,
+          "false_negatives": 308,
+          "support_positive": 5480,
+          "support_negative": 27964,
+          "relative_cost": {
+            "false_reassurance_weighted": 558.0,
+            "missed_detection_weighted": 3105.0
+          },
+          "roc_auc": 0.9994298750374568,
+          "pr_auc": 0.9980824325070632
+        }
+      }
+    ],
+    "selected": "gradient_boosting"
+  },
+  "costModel": {
+    "disclaimer": "Assumed relative costs used for threshold selection. These are not measured monetary losses and must not be read as such.",
+    "primary": {
+      "name": "false_reassurance_weighted",
+      "false_positive": 10.0,
+      "false_negative": 1.0
+    },
+    "primaryRationale": "A false positive tells a user that the lender in front of them matches a real registered entity when it does not \u2014 a false reassurance. A false negative degrades the result to 'could not be verified', which asks the user to check further. The first is the expensive error.",
+    "alternate": {
+      "name": "missed_detection_weighted",
+      "false_positive": 1.0,
+      "false_negative": 10.0
+    },
+    "alternateRationale": "The conventional fraud-detection framing, in which a missed detection costs ten times a false alarm. Reported for comparison; not used to choose the shipped threshold."
+  },
+  "threshold": {
+    "value": 0.91,
+    "chosenOn": "validation",
+    "sweep": [
+      {
+        "threshold": 0.01,
+        "precision": 0.9107083471898902,
+        "recall": 0.9994525547445255,
+        "f1": 0.9530189664172611,
+        "accuracy": 0.9838536060279871,
+        "true_positives": 5477,
+        "true_negatives": 27427,
+        "false_positives": 537,
+        "false_negatives": 3,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 5373.0,
+          "missed_detection_weighted": 567.0
+        }
+      },
+      {
+        "threshold": 0.02,
+        "precision": 0.9315977539561,
+        "recall": 0.9990875912408759,
+        "f1": 0.9641630712336005,
+        "accuracy": 0.9878304030618347,
+        "true_positives": 5475,
+        "true_negatives": 27562,
+        "false_positives": 402,
+        "false_negatives": 5,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 4025.0,
+          "missed_detection_weighted": 452.0
+        }
+      },
+      {
+        "threshold": 0.03,
+        "precision": 0.938625064289388,
+        "recall": 0.9990875912408759,
+        "f1": 0.967913020418987,
+        "accuracy": 0.9891460351632579,
+        "true_positives": 5475,
+        "true_negatives": 27606,
+        "false_positives": 358,
+        "false_negatives": 5,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 3585.0,
+          "missed_detection_weighted": 408.0
+        }
+      },
+      {
+        "threshold": 0.04,
+        "precision": 0.9444444444444444,
+        "recall": 0.9989051094890511,
+        "f1": 0.9709116708052501,
+        "accuracy": 0.990192560698481,
+        "true_positives": 5474,
+        "true_negatives": 27642,
+        "false_positives": 322,
+        "false_negatives": 6,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 3226.0,
+          "missed_detection_weighted": 382.0
+        }
+      },
+      {
+        "threshold": 0.05,
+        "precision": 0.9475324675324676,
+        "recall": 0.9985401459854014,
+        "f1": 0.9723678365171035,
+        "accuracy": 0.9907008731013037,
+        "true_positives": 5472,
+        "true_negatives": 27661,
+        "false_positives": 303,
+        "false_negatives": 8,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 3038.0,
+          "missed_detection_weighted": 383.0
+        }
+      },
+      {
+        "threshold": 0.06,
+        "precision": 0.9501649591943045,
+        "recall": 0.9985401459854014,
+        "f1": 0.9737521131773289,
+        "accuracy": 0.9911792847745485,
+        "true_positives": 5472,
+        "true_negatives": 27677,
+        "false_positives": 287,
+        "false_negatives": 8,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2878.0,
+          "missed_detection_weighted": 367.0
+        }
+      },
+      {
+        "threshold": 0.07,
+        "precision": 0.9524804177545692,
+        "recall": 0.9985401459854014,
+        "f1": 0.974966592427617,
+        "accuracy": 0.9915978949886377,
+        "true_positives": 5472,
+        "true_negatives": 27691,
+        "false_positives": 273,
+        "false_negatives": 8,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2738.0,
+          "missed_detection_weighted": 353.0
+        }
+      },
+      {
+        "threshold": 0.08,
+        "precision": 0.9539748953974896,
+        "recall": 0.9985401459854014,
+        "f1": 0.9757489300998573,
+        "accuracy": 0.991867001554838,
+        "true_positives": 5472,
+        "true_negatives": 27700,
+        "false_positives": 264,
+        "false_negatives": 8,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2648.0,
+          "missed_detection_weighted": 344.0
+        }
+      },
+      {
+        "threshold": 0.09,
+        "precision": 0.9563089828731213,
+        "recall": 0.9985401459854014,
+        "f1": 0.9769683985002678,
+        "accuracy": 0.9922856117689272,
+        "true_positives": 5472,
+        "true_negatives": 27714,
+        "false_positives": 250,
+        "false_negatives": 8,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2508.0,
+          "missed_detection_weighted": 330.0
+        }
+      },
+      {
+        "threshold": 0.1,
+        "precision": 0.9566357754852247,
+        "recall": 0.9983576642335766,
+        "f1": 0.9770515224573623,
+        "accuracy": 0.9923155124985049,
+        "true_positives": 5471,
+        "true_negatives": 27716,
+        "false_positives": 248,
+        "false_negatives": 9,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2489.0,
+          "missed_detection_weighted": 338.0
+        }
+      },
+      {
+        "threshold": 0.11,
+        "precision": 0.9581436077057793,
+        "recall": 0.9983576642335766,
+        "f1": 0.9778373547810545,
+        "accuracy": 0.9925846190647052,
+        "true_positives": 5471,
+        "true_negatives": 27725,
+        "false_positives": 239,
+        "false_negatives": 9,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2399.0,
+          "missed_detection_weighted": 329.0
+        }
+      },
+      {
+        "threshold": 0.12,
+        "precision": 0.9596562006665498,
+        "recall": 0.9983576642335766,
+        "f1": 0.9786244521956892,
+        "accuracy": 0.9928537256309053,
+        "true_positives": 5471,
+        "true_negatives": 27734,
+        "false_positives": 230,
+        "false_negatives": 9,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2309.0,
+          "missed_detection_weighted": 320.0
+        }
+      },
+      {
+        "threshold": 0.13,
+        "precision": 0.9608359676852828,
+        "recall": 0.9983576642335766,
+        "f1": 0.9792375156613567,
+        "accuracy": 0.99306303073795,
+        "true_positives": 5471,
+        "true_negatives": 27741,
+        "false_positives": 223,
+        "false_negatives": 9,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2239.0,
+          "missed_detection_weighted": 313.0
+        }
+      },
+      {
+        "threshold": 0.14,
+        "precision": 0.9614978902953587,
+        "recall": 0.997992700729927,
+        "f1": 0.9794054441260746,
+        "accuracy": 0.9931228321971056,
+        "true_positives": 5469,
+        "true_negatives": 27745,
+        "false_positives": 219,
+        "false_negatives": 11,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2201.0,
+          "missed_detection_weighted": 329.0
+        }
+      },
+      {
+        "threshold": 0.15,
+        "precision": 0.9628521126760563,
+        "recall": 0.997992700729927,
+        "f1": 0.9801075268817204,
+        "accuracy": 0.993362038033728,
+        "true_positives": 5469,
+        "true_negatives": 27753,
+        "false_positives": 211,
+        "false_negatives": 11,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2121.0,
+          "missed_detection_weighted": 321.0
+        }
+      },
+      {
+        "threshold": 0.16,
+        "precision": 0.9635306553911205,
+        "recall": 0.997992700729927,
+        "f1": 0.9804589458587307,
+        "accuracy": 0.9934816409520393,
+        "true_positives": 5469,
+        "true_negatives": 27757,
+        "false_positives": 207,
+        "false_negatives": 11,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2081.0,
+          "missed_detection_weighted": 317.0
+        }
+      },
+      {
+        "threshold": 0.17,
+        "precision": 0.9647204092432528,
+        "recall": 0.997992700729927,
+        "f1": 0.9810745358328101,
+        "accuracy": 0.9936909460590838,
+        "true_positives": 5469,
+        "true_negatives": 27764,
+        "false_positives": 200,
+        "false_negatives": 11,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2011.0,
+          "missed_detection_weighted": 310.0
+        }
+      },
+      {
+        "threshold": 0.18,
+        "precision": 0.9648906139731828,
+        "recall": 0.997992700729927,
+        "f1": 0.9811625403659849,
+        "accuracy": 0.9937208467886617,
+        "true_positives": 5469,
+        "true_negatives": 27765,
+        "false_positives": 199,
+        "false_negatives": 11,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 2001.0,
+          "missed_detection_weighted": 309.0
+        }
+      },
+      {
+        "threshold": 0.19,
+        "precision": 0.9655659544411089,
+        "recall": 0.9978102189781022,
+        "f1": 0.981423315085704,
+        "accuracy": 0.9938105489773951,
+        "true_positives": 5468,
+        "true_negatives": 27769,
+        "false_positives": 195,
+        "false_negatives": 12,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1962.0,
+          "missed_detection_weighted": 315.0
+        }
+      },
+      {
+        "threshold": 0.2,
+        "precision": 0.9660777385159011,
+        "recall": 0.9978102189781022,
+        "f1": 0.9816876122082585,
+        "accuracy": 0.9939002511661285,
+        "true_positives": 5468,
+        "true_negatives": 27772,
+        "false_positives": 192,
+        "false_negatives": 12,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1932.0,
+          "missed_detection_weighted": 312.0
+        }
+      },
+      {
+        "threshold": 0.21,
+        "precision": 0.9662365211242708,
+        "recall": 0.9974452554744525,
+        "f1": 0.9815928885696328,
+        "accuracy": 0.9938703504365507,
+        "true_positives": 5466,
+        "true_negatives": 27773,
+        "false_positives": 191,
+        "false_negatives": 14,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1924.0,
+          "missed_detection_weighted": 331.0
+        }
+      },
+      {
+        "threshold": 0.22,
+        "precision": 0.9667433221298426,
+        "recall": 0.9972627737226277,
+        "f1": 0.9817659211353633,
+        "accuracy": 0.9939301518957062,
+        "true_positives": 5465,
+        "true_negatives": 27776,
+        "false_positives": 188,
+        "false_negatives": 15,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1895.0,
+          "missed_detection_weighted": 338.0
+        }
+      },
+      {
+        "threshold": 0.23,
+        "precision": 0.9672566371681416,
+        "recall": 0.9972627737226277,
+        "f1": 0.9820305480682839,
+        "accuracy": 0.9940198540844397,
+        "true_positives": 5465,
+        "true_negatives": 27779,
+        "false_positives": 185,
+        "false_negatives": 15,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1865.0,
+          "missed_detection_weighted": 335.0
+        }
+      },
+      {
+        "threshold": 0.24,
+        "precision": 0.9675991501416431,
+        "recall": 0.9972627737226277,
+        "f1": 0.9822070452911574,
+        "accuracy": 0.9940796555435952,
+        "true_positives": 5465,
+        "true_negatives": 27781,
+        "false_positives": 183,
+        "false_negatives": 15,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1845.0,
+          "missed_detection_weighted": 333.0
+        }
+      },
+      {
+        "threshold": 0.25,
+        "precision": 0.9679419057739993,
+        "recall": 0.9972627737226277,
+        "f1": 0.9823836059680029,
+        "accuracy": 0.9941394570027509,
+        "true_positives": 5465,
+        "true_negatives": 27783,
+        "false_positives": 181,
+        "false_negatives": 15,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1825.0,
+          "missed_detection_weighted": 331.0
+        }
+      },
+      {
+        "threshold": 0.26,
+        "precision": 0.9686170212765958,
+        "recall": 0.996897810218978,
+        "f1": 0.9825539568345324,
+        "accuracy": 0.9941992584619065,
+        "true_positives": 5463,
+        "true_negatives": 27787,
+        "false_positives": 177,
+        "false_negatives": 17,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1787.0,
+          "missed_detection_weighted": 347.0
+        }
+      },
+      {
+        "threshold": 0.27,
+        "precision": 0.9689606243348705,
+        "recall": 0.996897810218978,
+        "f1": 0.9827307069616837,
+        "accuracy": 0.9942590599210621,
+        "true_positives": 5463,
+        "true_negatives": 27789,
+        "false_positives": 175,
+        "false_negatives": 17,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1767.0,
+          "missed_detection_weighted": 345.0
+        }
+      },
+      {
+        "threshold": 0.28,
+        "precision": 0.9693044712562101,
+        "recall": 0.996897810218978,
+        "f1": 0.982907520690896,
+        "accuracy": 0.9943188613802176,
+        "true_positives": 5463,
+        "true_negatives": 27791,
+        "false_positives": 173,
+        "false_negatives": 17,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1747.0,
+          "missed_detection_weighted": 343.0
+        }
+      },
+      {
+        "threshold": 0.29,
+        "precision": 0.9696431741523167,
+        "recall": 0.9967153284671533,
+        "f1": 0.9829928912084945,
+        "accuracy": 0.9943487621097955,
+        "true_positives": 5462,
+        "true_negatives": 27793,
+        "false_positives": 171,
+        "false_negatives": 18,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1728.0,
+          "missed_detection_weighted": 351.0
+        }
+      },
+      {
+        "threshold": 0.3,
+        "precision": 0.9703269367448472,
+        "recall": 0.9965328467153285,
+        "f1": 0.9832553114872165,
+        "accuracy": 0.9944384642985289,
+        "true_positives": 5461,
+        "true_negatives": 27797,
+        "false_positives": 167,
+        "false_negatives": 19,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1689.0,
+          "missed_detection_weighted": 357.0
+        }
+      },
+      {
+        "threshold": 0.31,
+        "precision": 0.9708392603129445,
+        "recall": 0.9963503649635036,
+        "f1": 0.9834293948126801,
+        "accuracy": 0.9944982657576845,
+        "true_positives": 5460,
+        "true_negatives": 27800,
+        "false_positives": 164,
+        "false_negatives": 20,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1660.0,
+          "missed_detection_weighted": 364.0
+        }
+      },
+      {
+        "threshold": 0.32,
+        "precision": 0.9711795054260808,
+        "recall": 0.9961678832116788,
+        "f1": 0.9835149986487703,
+        "accuracy": 0.9945281664872623,
+        "true_positives": 5459,
+        "true_negatives": 27802,
+        "false_positives": 162,
+        "false_negatives": 21,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1641.0,
+          "missed_detection_weighted": 372.0
+        }
+      },
+      {
+        "threshold": 0.33,
+        "precision": 0.9716981132075472,
+        "recall": 0.9961678832116788,
+        "f1": 0.9837808614164715,
+        "accuracy": 0.9946178686759957,
+        "true_positives": 5459,
+        "true_negatives": 27805,
+        "false_positives": 159,
+        "false_negatives": 21,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1611.0,
+          "missed_detection_weighted": 369.0
+        }
+      },
+      {
+        "threshold": 0.34,
+        "precision": 0.9725588025659302,
+        "recall": 0.995985401459854,
+        "f1": 0.9841327082582041,
+        "accuracy": 0.9947374715943069,
+        "true_positives": 5458,
+        "true_negatives": 27810,
+        "false_positives": 154,
+        "false_negatives": 22,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1562.0,
+          "missed_detection_weighted": 374.0
+        }
+      },
+      {
+        "threshold": 0.35,
+        "precision": 0.9739378793288112,
+        "recall": 0.9956204379562044,
+        "f1": 0.9846598086987909,
+        "accuracy": 0.9949168759717737,
+        "true_positives": 5456,
+        "true_negatives": 27818,
+        "false_positives": 146,
+        "false_negatives": 24,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1484.0,
+          "missed_detection_weighted": 386.0
+        }
+      },
+      {
+        "threshold": 0.36,
+        "precision": 0.9748034310221587,
+        "recall": 0.9954379562043796,
+        "f1": 0.9850126399422174,
+        "accuracy": 0.995036478890085,
+        "true_positives": 5455,
+        "true_negatives": 27823,
+        "false_positives": 141,
+        "false_negatives": 25,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1435.0,
+          "missed_detection_weighted": 391.0
+        }
+      },
+      {
+        "threshold": 0.37,
+        "precision": 0.975143061516452,
+        "recall": 0.9950729927007299,
+        "f1": 0.985007225433526,
+        "accuracy": 0.995036478890085,
+        "true_positives": 5453,
+        "true_negatives": 27825,
+        "false_positives": 139,
+        "false_negatives": 27,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1417.0,
+          "missed_detection_weighted": 409.0
+        }
+      },
+      {
+        "threshold": 0.38,
+        "precision": 0.9752998031143727,
+        "recall": 0.9943430656934307,
+        "f1": 0.9847293756212162,
+        "accuracy": 0.9949467767013516,
+        "true_positives": 5449,
+        "true_negatives": 27826,
+        "false_positives": 138,
+        "false_negatives": 31,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1411.0,
+          "missed_detection_weighted": 448.0
+        }
+      },
+      {
+        "threshold": 0.39,
+        "precision": 0.9756446991404012,
+        "recall": 0.9941605839416059,
+        "f1": 0.9848156182212582,
+        "accuracy": 0.9949766774309293,
+        "true_positives": 5448,
+        "true_negatives": 27828,
+        "false_positives": 136,
+        "false_negatives": 32,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1392.0,
+          "missed_detection_weighted": 456.0
+        }
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.9758151200286636,
+        "recall": 0.993978102189781,
+        "f1": 0.9848128728982101,
+        "accuracy": 0.9949766774309293,
+        "true_positives": 5447,
+        "true_negatives": 27829,
+        "false_positives": 135,
+        "false_negatives": 33,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1383.0,
+          "missed_detection_weighted": 465.0
+        }
+      },
+      {
+        "threshold": 0.41,
+        "precision": 0.9763313609467456,
+        "recall": 0.9936131386861314,
+        "f1": 0.9848964456905128,
+        "accuracy": 0.9950065781605071,
+        "true_positives": 5445,
+        "true_negatives": 27832,
+        "false_positives": 132,
+        "false_negatives": 35,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1355.0,
+          "missed_detection_weighted": 482.0
+        }
+      },
+      {
+        "threshold": 0.42,
+        "precision": 0.9764938094383635,
+        "recall": 0.993065693430657,
+        "f1": 0.9847100334750747,
+        "accuracy": 0.9949467767013516,
+        "true_positives": 5442,
+        "true_negatives": 27833,
+        "false_positives": 131,
+        "false_negatives": 38,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1348.0,
+          "missed_detection_weighted": 511.0
+        }
+      },
+      {
+        "threshold": 0.43,
+        "precision": 0.9766606822262118,
+        "recall": 0.9927007299270073,
+        "f1": 0.9846153846153847,
+        "accuracy": 0.9949168759717737,
+        "true_positives": 5440,
+        "true_negatives": 27834,
+        "false_positives": 130,
+        "false_negatives": 40,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1340.0,
+          "missed_detection_weighted": 530.0
+        }
+      },
+      {
+        "threshold": 0.44,
+        "precision": 0.9768318965517241,
+        "recall": 0.9925182481751825,
+        "f1": 0.9846125995655323,
+        "accuracy": 0.9949168759717737,
+        "true_positives": 5439,
+        "true_negatives": 27835,
+        "false_positives": 129,
+        "false_negatives": 41,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1331.0,
+          "missed_detection_weighted": 539.0
+        }
+      },
+      {
+        "threshold": 0.45,
+        "precision": 0.9778697373155811,
+        "recall": 0.9917883211678832,
+        "f1": 0.9847798514223591,
+        "accuracy": 0.9949766774309293,
+        "true_positives": 5435,
+        "true_negatives": 27841,
+        "false_positives": 123,
+        "false_negatives": 45,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1275.0,
+          "missed_detection_weighted": 573.0
+        }
+      },
+      {
+        "threshold": 0.46,
+        "precision": 0.9782060518731989,
+        "recall": 0.9910583941605839,
+        "f1": 0.984590282813633,
+        "accuracy": 0.9949168759717737,
+        "true_positives": 5431,
+        "true_negatives": 27843,
+        "false_positives": 121,
+        "false_negatives": 49,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1259.0,
+          "missed_detection_weighted": 611.0
+        }
+      },
+      {
+        "threshold": 0.47,
+        "precision": 0.9789075175770687,
+        "recall": 0.9908759124087592,
+        "f1": 0.9848553550376349,
+        "accuracy": 0.9950065781605071,
+        "true_positives": 5430,
+        "true_negatives": 27847,
+        "false_positives": 117,
+        "false_negatives": 50,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1220.0,
+          "missed_detection_weighted": 617.0
+        }
+      },
+      {
+        "threshold": 0.48,
+        "precision": 0.9794372294372294,
+        "recall": 0.9908759124087592,
+        "f1": 0.9851233671988389,
+        "accuracy": 0.9950962803492405,
+        "true_positives": 5430,
+        "true_negatives": 27850,
+        "false_positives": 114,
+        "false_negatives": 50,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1190.0,
+          "missed_detection_weighted": 614.0
+        }
+      },
+      {
+        "threshold": 0.49,
+        "precision": 0.9799566630552546,
+        "recall": 0.9903284671532847,
+        "f1": 0.9851152659284806,
+        "accuracy": 0.9950962803492405,
+        "true_positives": 5427,
+        "true_negatives": 27853,
+        "false_positives": 111,
+        "false_negatives": 53,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1163.0,
+          "missed_detection_weighted": 641.0
+        }
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.980126467931346,
+        "recall": 0.989963503649635,
+        "f1": 0.9850204266908761,
+        "accuracy": 0.9950663796196627,
+        "true_positives": 5425,
+        "true_negatives": 27854,
+        "false_positives": 110,
+        "false_negatives": 55,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1155.0,
+          "missed_detection_weighted": 660.0
+        }
+      },
+      {
+        "threshold": 0.51,
+        "precision": 0.9803035778821829,
+        "recall": 0.989963503649635,
+        "f1": 0.9851098601779553,
+        "accuracy": 0.9950962803492405,
+        "true_positives": 5425,
+        "true_negatives": 27855,
+        "false_positives": 109,
+        "false_negatives": 55,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1145.0,
+          "missed_detection_weighted": 659.0
+        }
+      },
+      {
+        "threshold": 0.52,
+        "precision": 0.9804595621494482,
+        "recall": 0.9888686131386861,
+        "f1": 0.9846461342781866,
+        "accuracy": 0.9949467767013516,
+        "true_positives": 5419,
+        "true_negatives": 27856,
+        "false_positives": 108,
+        "false_negatives": 61,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1141.0,
+          "missed_detection_weighted": 718.0
+        }
+      },
+      {
+        "threshold": 0.53,
+        "precision": 0.9809851503078595,
+        "recall": 0.9885036496350365,
+        "f1": 0.9847300490819851,
+        "accuracy": 0.9949766774309293,
+        "true_positives": 5417,
+        "true_negatives": 27859,
+        "false_positives": 105,
+        "false_negatives": 63,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1113.0,
+          "missed_detection_weighted": 735.0
+        }
+      },
+      {
+        "threshold": 0.54,
+        "precision": 0.9809748142779489,
+        "recall": 0.987956204379562,
+        "f1": 0.9844531321029184,
+        "accuracy": 0.9948869752421959,
+        "true_positives": 5414,
+        "true_negatives": 27859,
+        "false_positives": 105,
+        "false_negatives": 66,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1116.0,
+          "missed_detection_weighted": 765.0
+        }
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.9811525915186662,
+        "recall": 0.987956204379562,
+        "f1": 0.9845426441171122,
+        "accuracy": 0.9949168759717737,
+        "true_positives": 5414,
+        "true_negatives": 27860,
+        "false_positives": 104,
+        "false_negatives": 66,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1106.0,
+          "missed_detection_weighted": 764.0
+        }
+      },
+      {
+        "threshold": 0.56,
+        "precision": 0.9813134978229318,
+        "recall": 0.987043795620438,
+        "f1": 0.9841703056768559,
+        "accuracy": 0.9947972730534625,
+        "true_positives": 5409,
+        "true_negatives": 27861,
+        "false_positives": 103,
+        "false_negatives": 71,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1101.0,
+          "missed_detection_weighted": 813.0
+        }
+      },
+      {
+        "threshold": 0.57,
+        "precision": 0.9814814814814815,
+        "recall": 0.9864963503649635,
+        "f1": 0.9839825263924281,
+        "accuracy": 0.9947374715943069,
+        "true_positives": 5406,
+        "true_negatives": 27862,
+        "false_positives": 102,
+        "false_negatives": 74,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1094.0,
+          "missed_detection_weighted": 842.0
+        }
+      },
+      {
+        "threshold": 0.58,
+        "precision": 0.981653042688465,
+        "recall": 0.9861313868613139,
+        "f1": 0.9838871187983614,
+        "accuracy": 0.994707570864729,
+        "true_positives": 5404,
+        "true_negatives": 27863,
+        "false_positives": 101,
+        "false_negatives": 76,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1086.0,
+          "missed_detection_weighted": 861.0
+        }
+      },
+      {
+        "threshold": 0.59,
+        "precision": 0.9818280937670362,
+        "recall": 0.9859489051094891,
+        "f1": 0.983884184649003,
+        "accuracy": 0.994707570864729,
+        "true_positives": 5403,
+        "true_negatives": 27864,
+        "false_positives": 100,
+        "false_negatives": 77,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1077.0,
+          "missed_detection_weighted": 870.0
+        }
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.9823604291689398,
+        "recall": 0.9857664233576642,
+        "f1": 0.9840604790964569,
+        "accuracy": 0.9947673723238847,
+        "true_positives": 5402,
+        "true_negatives": 27867,
+        "false_positives": 97,
+        "false_negatives": 78,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1048.0,
+          "missed_detection_weighted": 877.0
+        }
+      },
+      {
+        "threshold": 0.61,
+        "precision": 0.982884195193008,
+        "recall": 0.9850364963503649,
+        "f1": 0.983959168793292,
+        "accuracy": 0.9947374715943069,
+        "true_positives": 5398,
+        "true_negatives": 27870,
+        "false_positives": 94,
+        "false_negatives": 82,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1022.0,
+          "missed_detection_weighted": 914.0
+        }
+      },
+      {
+        "threshold": 0.62,
+        "precision": 0.983594604447685,
+        "recall": 0.9846715328467154,
+        "f1": 0.9841327740288164,
+        "accuracy": 0.9947972730534625,
+        "true_positives": 5396,
+        "true_negatives": 27874,
+        "false_positives": 90,
+        "false_negatives": 84,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 984.0,
+          "missed_detection_weighted": 930.0
+        }
+      },
+      {
+        "threshold": 0.63,
+        "precision": 0.9835886214442013,
+        "recall": 0.9843065693430657,
+        "f1": 0.9839474644290405,
+        "accuracy": 0.9947374715943069,
+        "true_positives": 5394,
+        "true_negatives": 27874,
+        "false_positives": 90,
+        "false_negatives": 86,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 986.0,
+          "missed_detection_weighted": 950.0
+        }
+      },
+      {
+        "threshold": 0.64,
+        "precision": 0.9837531945965681,
+        "recall": 0.9833941605839416,
+        "f1": 0.9835736448256981,
+        "accuracy": 0.9946178686759957,
+        "true_positives": 5389,
+        "true_negatives": 27875,
+        "false_positives": 89,
+        "false_negatives": 91,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 981.0,
+          "missed_detection_weighted": 999.0
+        }
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.9839269406392694,
+        "recall": 0.983029197080292,
+        "f1": 0.9834778639890461,
+        "accuracy": 0.9945879679464179,
+        "true_positives": 5387,
+        "true_negatives": 27876,
+        "false_positives": 88,
+        "false_negatives": 93,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 973.0,
+          "missed_detection_weighted": 1018.0
+        }
+      },
+      {
+        "threshold": 0.66,
+        "precision": 0.9848207754206291,
+        "recall": 0.9826642335766423,
+        "f1": 0.9837413226160029,
+        "accuracy": 0.9946776701351513,
+        "true_positives": 5385,
+        "true_negatives": 27881,
+        "false_positives": 83,
+        "false_negatives": 95,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 925.0,
+          "missed_detection_weighted": 1033.0
+        }
+      },
+      {
+        "threshold": 0.67,
+        "precision": 0.9849981705085986,
+        "recall": 0.9824817518248176,
+        "f1": 0.9837383519093733,
+        "accuracy": 0.9946776701351513,
+        "true_positives": 5384,
+        "true_negatives": 27882,
+        "false_positives": 82,
+        "false_negatives": 96,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 916.0,
+          "missed_detection_weighted": 1042.0
+        }
+      },
+      {
+        "threshold": 0.68,
+        "precision": 0.9853506683757554,
+        "recall": 0.9819343065693431,
+        "f1": 0.9836395210675442,
+        "accuracy": 0.9946477694055735,
+        "true_positives": 5381,
+        "true_negatives": 27884,
+        "false_positives": 80,
+        "false_negatives": 99,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 899.0,
+          "missed_detection_weighted": 1070.0
+        }
+      },
+      {
+        "threshold": 0.69,
+        "precision": 0.9856985698569857,
+        "recall": 0.981021897810219,
+        "f1": 0.9833546734955185,
+        "accuracy": 0.99455806721684,
+        "true_positives": 5376,
+        "true_negatives": 27886,
+        "false_positives": 78,
+        "false_negatives": 104,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 884.0,
+          "missed_detection_weighted": 1118.0
+        }
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.9860396767083027,
+        "recall": 0.9795620437956204,
+        "f1": 0.9827901867447821,
+        "accuracy": 0.9943786628393733,
+        "true_positives": 5368,
+        "true_negatives": 27888,
+        "false_positives": 76,
+        "false_negatives": 112,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 872.0,
+          "missed_detection_weighted": 1196.0
+        }
+      },
+      {
+        "threshold": 0.71,
+        "precision": 0.9863845446182152,
+        "recall": 0.9782846715328467,
+        "f1": 0.9823179111314705,
+        "accuracy": 0.9942291591914842,
+        "true_positives": 5361,
+        "true_negatives": 27890,
+        "false_positives": 74,
+        "false_negatives": 119,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 859.0,
+          "missed_detection_weighted": 1264.0
+        }
+      },
+      {
+        "threshold": 0.72,
+        "precision": 0.9865635928584576,
+        "recall": 0.9781021897810219,
+        "f1": 0.9823146705763768,
+        "accuracy": 0.9942291591914842,
+        "true_positives": 5360,
+        "true_negatives": 27891,
+        "false_positives": 73,
+        "false_negatives": 120,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 850.0,
+          "missed_detection_weighted": 1273.0
+        }
+      },
+      {
+        "threshold": 0.73,
+        "precision": 0.9867378891140173,
+        "recall": 0.9775547445255475,
+        "f1": 0.9821248510404254,
+        "accuracy": 0.9941693577323286,
+        "true_positives": 5357,
+        "true_negatives": 27892,
+        "false_positives": 72,
+        "false_negatives": 123,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 843.0,
+          "missed_detection_weighted": 1302.0
+        }
+      },
+      {
+        "threshold": 0.74,
+        "precision": 0.9876292466765141,
+        "recall": 0.9760948905109489,
+        "f1": 0.9818281938325991,
+        "accuracy": 0.9940796555435952,
+        "true_positives": 5349,
+        "true_negatives": 27897,
+        "false_positives": 67,
+        "false_negatives": 131,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 801.0,
+          "missed_detection_weighted": 1377.0
+        }
+      },
+      {
+        "threshold": 0.75,
+        "precision": 0.9877868245743894,
+        "recall": 0.974087591240876,
+        "f1": 0.9808893789048144,
+        "accuracy": 0.9937806482478172,
+        "true_positives": 5338,
+        "true_negatives": 27898,
+        "false_positives": 66,
+        "false_negatives": 142,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 802.0,
+          "missed_detection_weighted": 1486.0
+        }
+      },
+      {
+        "threshold": 0.76,
+        "precision": 0.9885057471264368,
+        "recall": 0.972992700729927,
+        "f1": 0.9806878793452272,
+        "accuracy": 0.9937208467886617,
+        "true_positives": 5332,
+        "true_negatives": 27902,
+        "false_positives": 62,
+        "false_negatives": 148,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 768.0,
+          "missed_detection_weighted": 1542.0
+        }
+      },
+      {
+        "threshold": 0.77,
+        "precision": 0.9888600074266617,
+        "recall": 0.9718978102189781,
+        "f1": 0.9803055402171912,
+        "accuracy": 0.9936012438703504,
+        "true_positives": 5326,
+        "true_negatives": 27904,
+        "false_positives": 60,
+        "false_negatives": 154,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 754.0,
+          "missed_detection_weighted": 1600.0
+        }
+      },
+      {
+        "threshold": 0.78,
+        "precision": 0.9895891429633761,
+        "recall": 0.9713503649635037,
+        "f1": 0.9803849341559996,
+        "accuracy": 0.9936311445999282,
+        "true_positives": 5323,
+        "true_negatives": 27908,
+        "false_positives": 56,
+        "false_negatives": 157,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 717.0,
+          "missed_detection_weighted": 1626.0
+        }
+      },
+      {
+        "threshold": 0.79,
+        "precision": 0.9901303538175047,
+        "recall": 0.9702554744525548,
+        "f1": 0.9800921658986175,
+        "accuracy": 0.9935414424111948,
+        "true_positives": 5317,
+        "true_negatives": 27911,
+        "false_positives": 53,
+        "false_negatives": 163,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 693.0,
+          "missed_detection_weighted": 1683.0
+        }
+      },
+      {
+        "threshold": 0.8,
+        "precision": 0.9904850746268656,
+        "recall": 0.9687956204379562,
+        "f1": 0.979520295202952,
+        "accuracy": 0.993362038033728,
+        "true_positives": 5309,
+        "true_negatives": 27913,
+        "false_positives": 51,
+        "false_negatives": 171,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 681.0,
+          "missed_detection_weighted": 1761.0
+        }
+      },
+      {
+        "threshold": 0.81,
+        "precision": 0.9904619412754816,
+        "recall": 0.9664233576642336,
+        "f1": 0.978295003232659,
+        "accuracy": 0.9929733285492166,
+        "true_positives": 5296,
+        "true_negatives": 27913,
+        "false_positives": 51,
+        "false_negatives": 184,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 694.0,
+          "missed_detection_weighted": 1891.0
+        }
+      },
+      {
+        "threshold": 0.82,
+        "precision": 0.9904601571268238,
+        "recall": 0.9662408759124088,
+        "f1": 0.978200628117495,
+        "accuracy": 0.9929434278196388,
+        "true_positives": 5295,
+        "true_negatives": 27913,
+        "false_positives": 51,
+        "false_negatives": 185,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 695.0,
+          "missed_detection_weighted": 1901.0
+        }
+      },
+      {
+        "threshold": 0.83,
+        "precision": 0.9908102025506377,
+        "recall": 0.964051094890511,
+        "f1": 0.9772475027746947,
+        "accuracy": 0.9926444205238608,
+        "true_positives": 5283,
+        "true_negatives": 27915,
+        "false_positives": 49,
+        "false_negatives": 197,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 687.0,
+          "missed_detection_weighted": 2019.0
+        }
+      },
+      {
+        "threshold": 0.84,
+        "precision": 0.991346877351392,
+        "recall": 0.9616788321167883,
+        "f1": 0.9762875138940348,
+        "accuracy": 0.9923454132280828,
+        "true_positives": 5270,
+        "true_negatives": 27918,
+        "false_positives": 46,
+        "false_negatives": 210,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 670.0,
+          "missed_detection_weighted": 2146.0
+        }
+      },
+      {
+        "threshold": 0.85,
+        "precision": 0.9917090635010364,
+        "recall": 0.9604014598540146,
+        "f1": 0.9758042087698156,
+        "accuracy": 0.9921959095801938,
+        "true_positives": 5263,
+        "true_negatives": 27920,
+        "false_positives": 44,
+        "false_negatives": 217,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 657.0,
+          "missed_detection_weighted": 2214.0
+        }
+      },
+      {
+        "threshold": 0.86,
+        "precision": 0.9916855631141346,
+        "recall": 0.9576642335766423,
+        "f1": 0.974378017081322,
+        "accuracy": 0.9917473986365267,
+        "true_positives": 5248,
+        "true_negatives": 27920,
+        "false_positives": 44,
+        "false_negatives": 232,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 672.0,
+          "missed_detection_weighted": 2364.0
+        }
+      },
+      {
+        "threshold": 0.87,
+        "precision": 0.992412746585736,
+        "recall": 0.9547445255474453,
+        "f1": 0.9732142857142857,
+        "accuracy": 0.9913885898815931,
+        "true_positives": 5232,
+        "true_negatives": 27924,
+        "false_positives": 40,
+        "false_negatives": 248,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 648.0,
+          "missed_detection_weighted": 2520.0
+        }
+      },
+      {
+        "threshold": 0.88,
+        "precision": 0.9935213414634146,
+        "recall": 0.9514598540145985,
+        "f1": 0.9720357941834452,
+        "accuracy": 0.9910297811266595,
+        "true_positives": 5214,
+        "true_negatives": 27930,
+        "false_positives": 34,
+        "false_negatives": 266,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 606.0,
+          "missed_detection_weighted": 2694.0
+        }
+      },
+      {
+        "threshold": 0.89,
+        "precision": 0.9936974789915967,
+        "recall": 0.9494525547445255,
+        "f1": 0.9710712952594251,
+        "accuracy": 0.9907307738308815,
+        "true_positives": 5203,
+        "true_negatives": 27931,
+        "false_positives": 33,
+        "false_negatives": 277,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 607.0,
+          "missed_detection_weighted": 2803.0
+        }
+      },
+      {
+        "threshold": 0.9,
+        "precision": 0.994057887674909,
+        "recall": 0.9463503649635037,
+        "f1": 0.9696176498083575,
+        "accuracy": 0.9902822628872144,
+        "true_positives": 5186,
+        "true_negatives": 27933,
+        "false_positives": 31,
+        "false_negatives": 294,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 604.0,
+          "missed_detection_weighted": 2971.0
+        }
+      },
+      {
+        "threshold": 0.91,
+        "precision": 0.9951895324225515,
+        "recall": 0.9437956204379562,
+        "f1": 0.9688114638943524,
+        "accuracy": 0.990043057050592,
+        "true_positives": 5172,
+        "true_negatives": 27939,
+        "false_positives": 25,
+        "false_negatives": 308,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 558.0,
+          "missed_detection_weighted": 3105.0
+        }
+      },
+      {
+        "threshold": 0.92,
+        "precision": 0.995358731386579,
+        "recall": 0.9392335766423358,
+        "f1": 0.9664820204675617,
+        "accuracy": 0.9893254395407248,
+        "true_positives": 5147,
+        "true_negatives": 27940,
+        "false_positives": 24,
+        "false_negatives": 333,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 573.0,
+          "missed_detection_weighted": 3354.0
+        }
+      },
+      {
+        "threshold": 0.93,
+        "precision": 0.9957173447537473,
+        "recall": 0.9333941605839416,
+        "f1": 0.963549025148347,
+        "accuracy": 0.9884284176533907,
+        "true_positives": 5115,
+        "true_negatives": 27942,
+        "false_positives": 22,
+        "false_negatives": 365,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 585.0,
+          "missed_detection_weighted": 3672.0
+        }
+      },
+      {
+        "threshold": 0.94,
+        "precision": 0.9956854285153952,
+        "recall": 0.9264598540145985,
+        "f1": 0.9598260705170621,
+        "accuracy": 0.9872921899294342,
+        "true_positives": 5077,
+        "true_negatives": 27942,
+        "false_positives": 22,
+        "false_negatives": 403,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 623.0,
+          "missed_detection_weighted": 4052.0
+        }
+      },
+      {
+        "threshold": 0.95,
+        "precision": 0.9960262269024439,
+        "recall": 0.9147810218978102,
+        "f1": 0.9536764006468182,
+        "accuracy": 0.9854383446956105,
+        "true_positives": 5013,
+        "true_negatives": 27944,
+        "false_positives": 20,
+        "false_negatives": 467,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 667.0,
+          "missed_detection_weighted": 4690.0
+        }
+      },
+      {
+        "threshold": 0.96,
+        "precision": 0.9967741935483871,
+        "recall": 0.9021897810218978,
+        "f1": 0.9471264367816092,
+        "accuracy": 0.9834947972730534,
+        "true_positives": 4944,
+        "true_negatives": 27948,
+        "false_positives": 16,
+        "false_negatives": 536,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 696.0,
+          "missed_detection_weighted": 5376.0
+        }
+      },
+      {
+        "threshold": 0.97,
+        "precision": 0.9975384615384615,
+        "recall": 0.8874087591240876,
+        "f1": 0.9392563978754225,
+        "accuracy": 0.9811924410955627,
+        "true_positives": 4863,
+        "true_negatives": 27952,
+        "false_positives": 12,
+        "false_negatives": 617,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 737.0,
+          "missed_detection_weighted": 6182.0
+        }
+      },
+      {
+        "threshold": 0.98,
+        "precision": 0.9980062029242357,
+        "recall": 0.8220802919708029,
+        "f1": 0.9015409245547329,
+        "accuracy": 0.9705776820954432,
+        "true_positives": 4505,
+        "true_negatives": 27955,
+        "false_positives": 9,
+        "false_negatives": 975,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1065.0,
+          "missed_detection_weighted": 9759.0
+        }
+      },
+      {
+        "threshold": 0.99,
+        "precision": 0.998989388580091,
+        "recall": 0.7215328467153285,
+        "f1": 0.8378893833439288,
+        "accuracy": 0.9542518837459634,
+        "true_positives": 3954,
+        "true_negatives": 27960,
+        "false_positives": 4,
+        "false_negatives": 1526,
+        "support_positive": 5480,
+        "support_negative": 27964,
+        "relative_cost": {
+          "false_reassurance_weighted": 1566.0,
+          "missed_detection_weighted": 15264.0
+        }
+      }
+    ]
+  },
+  "validation": {
+    "threshold": 0.91,
+    "precision": 0.9951895324225515,
+    "recall": 0.9437956204379562,
+    "f1": 0.9688114638943524,
+    "accuracy": 0.990043057050592,
+    "true_positives": 5172,
+    "true_negatives": 27939,
+    "false_positives": 25,
+    "false_negatives": 308,
+    "support_positive": 5480,
+    "support_negative": 27964,
+    "relative_cost": {
+      "false_reassurance_weighted": 558.0,
+      "missed_detection_weighted": 3105.0
+    },
+    "roc_auc": 0.9994298750374568,
+    "pr_auc": 0.9980824325070632
+  },
+  "test": {
+    "threshold": 0.91,
+    "precision": 0.9957666114485552,
+    "recall": 0.9481247809323519,
+    "f1": 0.9713618816769908,
+    "accuracy": 0.9908561928512053,
+    "true_positives": 5410,
+    "true_negatives": 29158,
+    "false_positives": 23,
+    "false_negatives": 296,
+    "support_positive": 5706,
+    "support_negative": 29181,
+    "relative_cost": {
+      "false_reassurance_weighted": 526.0,
+      "missed_detection_weighted": 2983.0
+    },
+    "roc_auc": 0.9995385893761712,
+    "pr_auc": 0.9981804032280972
+  },
+  "testBreakdown": {
+    "byQueryVariant": [
+      {
+        "variant": "ampersand_spelled_out",
+        "positive_pairs": 3,
+        "recalled": 3,
+        "recall": 1.0
+      },
+      {
+        "variant": "initialism",
+        "positive_pairs": 449,
+        "recalled": 393,
+        "recall": 0.8752783964365256
+      },
+      {
+        "variant": "initialism_with_legal_form",
+        "positive_pairs": 829,
+        "recalled": 768,
+        "recall": 0.9264173703256936
+      },
+      {
+        "variant": "legal_form_dropped",
+        "positive_pairs": 833,
+        "recalled": 831,
+        "recall": 0.9975990396158463
+      },
+      {
+        "variant": "legal_form_swapped",
+        "positive_pairs": 901,
+        "recalled": 892,
+        "recall": 0.9900110987791343
+      },
+      {
+        "variant": "middle_word_dropped",
+        "positive_pairs": 787,
+        "recalled": 654,
+        "recall": 0.8310038119440915
+      },
+      {
+        "variant": "rbi_former_name",
+        "positive_pairs": 47,
+        "recalled": 47,
+        "recall": 1.0
+      },
+      {
+        "variant": "single_character_typo",
+        "positive_pairs": 929,
+        "recalled": 894,
+        "recall": 0.9623250807319699
+      },
+      {
+        "variant": "verbatim",
+        "positive_pairs": 928,
+        "recalled": 928,
+        "recall": 1.0
+      }
+    ],
+    "byEntitySource": [
+      {
+        "source": "bank",
+        "positive_pairs": 185,
+        "recalled": 170,
+        "recall": 0.918918918918919
+      },
+      {
+        "source": "cancelled_company",
+        "positive_pairs": 1084,
+        "recalled": 996,
+        "recall": 0.9188191881918819
+      },
+      {
+        "source": "cancelled_record",
+        "positive_pairs": 26,
+        "recalled": 26,
+        "recall": 1.0
+      },
+      {
+        "source": "registered_arc",
+        "positive_pairs": 31,
+        "recalled": 25,
+        "recall": 0.8064516129032258
+      },
+      {
+        "source": "registered_nbfc",
+        "positive_pairs": 4380,
+        "recalled": 4193,
+        "recall": 0.9573059360730594
+      }
+    ]
+  },
+  "exportParity": {
+    "maxAbsoluteDifference": 1.3322676295501878e-15,
+    "note": "The JSON artifact was re-scored over the whole test split and compared against scikit-learn's own probabilities. The application serves the artifact, so this is what makes the published metrics apply to it."
+  }
+}

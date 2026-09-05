@@ -1,0 +1,49 @@
+{
+  "name": "lenderlens",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "import:rbi": "tsx scripts/import-rbi.ts",
+    "db:status": "tsx scripts/db-status.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test \"tests/normalize.test.ts\" \"tests/similarity.test.ts\" \"tests/input.test.ts\" \"tests/decision.test.ts\" \"tests/headline.test.ts\" \"tests/layers.test.ts\" \"tests/ml-model.test.ts\" \"tests/entity-index.test.ts\" \"tests/investigate.test.ts\" \"tests/investigate-identity.test.ts\"",
+    "test:db": "node --conditions=react-server --import tsx --test \"tests/rbi-queries.test.ts\"",
+    "test:all": "npm run test && npm run test:engine",
+    "fetch:banks": "tsx scripts/fetch-rbi-banks.ts",
+    "build:index": "tsx scripts/build-index.ts",
+    "build:data": "npm run fetch:banks && npm run build:index",
+    "ml:pairs": "tsx scripts/ml/build-pairs.ts",
+    "ml:train": "python ml/train.py",
+    "ml:all": "npm run ml:pairs && npm run ml:train",
+    "demo": "node --conditions=react-server --import tsx scripts/demo-cases.ts",
+    "test:engine": "node --conditions=react-server --import tsx --test \"tests/engine.test.ts\" \"tests/rate-limit.test.ts\" \"tests/investigate-agent.test.ts\" \"tests/contact-domain.test.ts\"",
+    "ml:publish": "tsx scripts/publish-model.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.21.0",
+    "@supabase/supabase-js": "^2.112.2",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "exceljs": "^4.4.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.12",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}

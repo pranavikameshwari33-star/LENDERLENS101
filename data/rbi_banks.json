@@ -1,0 +1,3430 @@
+{
+  "sourceUrl": "https://www.rbi.org.in/commonman/english/scripts/BanksInIndia.aspx",
+  "sourceName": "Reserve Bank of India - Banks in India",
+  "fetchedAt": "2026-08-29T06:01:24.005Z",
+  "sectionHeadings": [
+    "State Bank of India",
+    "Nationalised Banks",
+    "Private Sector Banks – Indian Banks",
+    "Local Area Banks (LABs)",
+    "Small Finance Banks (SFBs)",
+    "Payments Banks (PBs)",
+    "Foreign Banks (Branch Mode) – Address of Principle Branch",
+    "Foreign Banks (Wholly Owned Banking Subsidiary) - Address of Registered Office",
+    "SBI & Nationalised Banks",
+    "Domestic Private Sector Banks",
+    "Small Finance Banks",
+    "Payments Banks",
+    "Regional Rural Banks",
+    "Name of the RRB",
+    "Foreign banks in India",
+    "State Co-operative Banks",
+    "List of Private Sector Banks in India",
+    "List of Local Area Banks (LAB)",
+    "List of Small Finance Banks (SFB)",
+    "List of Payments Banks (PB)",
+    "List of Public Sector Banks in India",
+    "List of Financial Institutions in India",
+    "List of Regional Rural Banks in India",
+    "Name of RRB",
+    "List of foreign banks having banking presence in India"
+  ],
+  "counts": {
+    "total": 168,
+    "withWebsite": 133,
+    "byCategory": {
+      "financial_institution": 4,
+      "foreign_bank": 46,
+      "foreign_bank_subsidiary": 2,
+      "local_area_bank": 3,
+      "payments_bank": 6,
+      "private_sector_bank": 21,
+      "public_sector_bank": 12,
+      "regional_rural_bank": 28,
+      "small_finance_bank": 12,
+      "state_cooperative_bank": 34
+    }
+  },
+  "banks": [
+    {
+      "id": "bank_ab_bank",
+      "name": "AB Bank Ltd.",
+      "nameNormalized": "AB BANK LTD",
+      "nameCore": "AB BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://abbl.com/mumbai-branch/"
+      ],
+      "hostnames": [
+        "abbl.com"
+      ],
+      "address": "41 / 42 Liberty Building, Sir Vithaldas Thakersey Marg, New Marine Lines, Mumbai - 400020, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India",
+        "List of foreign banks having banking presence in India"
+      ]
+    },
+    {
+      "id": "bank_airtel_payments_bank",
+      "name": "Airtel Payments Bank Limited",
+      "nameNormalized": "AIRTEL PAYMENTS BANK LIMITED",
+      "nameCore": "AIRTEL PAYMENTS BANK",
+      "category": "payments_bank",
+      "categories": [
+        "payments_bank"
+      ],
+      "websites": [
+        "https://www.airtelpayments.bank.in",
+        "https://www.airtelpayments.bank.in/"
+      ],
+      "hostnames": [
+        "airtelpayments.bank.in"
+      ],
+      "address": "Bharti Crescent,, 1 Nelson Mandela Road, Vasant Kunj, Phase II,, New Delhi - 110070",
+      "sourceHeadings": [
+        "List of Payments Banks (PB)",
+        "Payments Banks",
+        "Payments Banks (PBs)"
+      ]
+    },
+    {
+      "id": "bank_american_express_banking",
+      "name": "American Express Banking Corporation",
+      "nameNormalized": "AMERICAN EXPRESS BANKING CORPORATION",
+      "nameCore": "AMERICAN EXPRESS BANKING",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.americanexpress.com/in/"
+      ],
+      "hostnames": [
+        "americanexpress.com"
+      ],
+      "address": "Cyber City, Tower &ldquo;C&rdquo;, DLF Building No. 8 Sector - 25, DLF City Phase - II, Gurugram - 122002, Haryana",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_andhra_pradesh_grameena_bank",
+      "name": "Andhra Pradesh Grameena Bank",
+      "nameNormalized": "ANDHRA PRADESH GRAMEENA BANK",
+      "nameCore": "ANDHRA PRADESH GRAMEENA BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "https://www.apgb.bank.in/"
+      ],
+      "hostnames": [
+        "apgb.bank.in"
+      ],
+      "address": "Head Office, D. No 5-37-234,, 4th Floor, Raghu Mansion, 4/1 Brodipet,, Guntur, Andhra Pradesh",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_arunachal_pradesh_rural_bank",
+      "name": "Arunachal Pradesh Rural Bank",
+      "nameNormalized": "ARUNACHAL PRADESH RURAL BANK",
+      "nameCore": "ARUNACHAL PRADESH RURAL BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.aprb.bank.in/"
+      ],
+      "hostnames": [
+        "aprb.bank.in"
+      ],
+      "address": "Head Office: E-Sector, Shiv Mandir Road,, Naharlagun-791110, Arunachal Pradesh",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_assam_gramin_bank",
+      "name": "Assam Gramin Bank",
+      "nameNormalized": "ASSAM GRAMIN BANK",
+      "nameCore": "ASSAM GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "https://agvb.bank.in/"
+      ],
+      "hostnames": [
+        "agvb.bank.in"
+      ],
+      "address": "Head Office, Adam's Plaza, Christian Basti, Mahapurush Srimanta Sankardev Path, Guwahati - 781005",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_au_small_finance_bank",
+      "name": "Au Small Finance Bank Limited",
+      "nameNormalized": "AU SMALL FINANCE BANK LIMITED",
+      "nameCore": "AU SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://www.au.bank.in/"
+      ],
+      "hostnames": [
+        "au.bank.in"
+      ],
+      "address": "19-A, Dhuleshwar Garden Ajmer Road, Jaipur - 302001, Rajasthan",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_australia_and_new_zealand_banking_group",
+      "name": "Australia and New Zealand Banking Group Ltd.",
+      "nameNormalized": "AUSTRALIA AND NEW ZEALAND BANKING GROUP LTD",
+      "nameCore": "AUSTRALIA AND NEW ZEALAND BANKING GROUP",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://www.anz.com/india/en/Corporate/"
+      ],
+      "hostnames": [
+        "anz.com"
+      ],
+      "address": "Raheja tower, 5th floor, Block G, plot No. C-30, Bandra Kurla Complex, Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_axis_bank",
+      "name": "Axis Bank Limited",
+      "nameNormalized": "AXIS BANK LIMITED",
+      "nameCore": "AXIS BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.axis.bank.in/"
+      ],
+      "hostnames": [
+        "axis.bank.in"
+      ],
+      "address": "\"Trishul\", Third Floor,, Opp. Samartheshwar Temple,, Law Garden, Ellisbridge, Ahmedabad - 380006, Gujarat",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_bandhan_bank",
+      "name": "Bandhan Bank Limited",
+      "nameNormalized": "BANDHAN BANK LIMITED",
+      "nameCore": "BANDHAN BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.bandhan.bank.in/"
+      ],
+      "hostnames": [
+        "bandhan.bank.in"
+      ],
+      "address": "DN 32, Sector V,, Salt Lake City, Kolkata - 700091, West Bengal",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_bank_of_america",
+      "name": "Bank of America",
+      "nameNormalized": "BANK OF AMERICA",
+      "nameCore": "BANK OF AMERICA",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://bofa-india.com/"
+      ],
+      "hostnames": [
+        "bofa-india.com"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of foreign banks having banking presence in India"
+      ]
+    },
+    {
+      "id": "bank_bank_of_america_national_association",
+      "name": "Bank of America, National Association",
+      "nameNormalized": "BANK OF AMERICA NATIONAL ASSOCIATION",
+      "nameCore": "BANK OF AMERICA NATIONAL ASSOCIATION",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://bofa-india.com/"
+      ],
+      "hostnames": [
+        "bofa-india.com"
+      ],
+      "address": "Corporate Office 18th Floor, A Wing, One BKC, G Block, Bandra Kurla Complex, Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_bank_of_bahrain_and_kuwait_b_s_c",
+      "name": "Bank of Bahrain and Kuwait B.S.C.",
+      "nameNormalized": "BANK OF BAHRAIN AND KUWAIT B S C",
+      "nameCore": "BANK OF BAHRAIN AND KUWAIT B S C",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://bbkindia.bank.in/"
+      ],
+      "hostnames": [
+        "bbkindia.bank.in"
+      ],
+      "address": "225, Ground Floor, Jolly Maker Chambers II, Nariman Point, Mumbai - 400021, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_bank_of_baroda",
+      "name": "Bank of Baroda",
+      "nameNormalized": "BANK OF BARODA",
+      "nameCore": "BANK OF BARODA",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://bankofbaroda.bank.in/"
+      ],
+      "hostnames": [
+        "bankofbaroda.bank.in"
+      ],
+      "address": "Baroda Bhawan,, 7th floor, R.C. Dutt Road,, Vadodara - 390007, Gujarat",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_bank_of_ceylon",
+      "name": "Bank of Ceylon",
+      "nameNormalized": "BANK OF CEYLON",
+      "nameCore": "BANK OF CEYLON",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.boc.lk/"
+      ],
+      "hostnames": [
+        "boc.lk"
+      ],
+      "address": "No. 20/21, Casa Major Road, Zerald Garden, 2nd Lane, Egmore,, Chennai - 600008, Tamil Nadu",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_bank_of_china",
+      "name": "Bank of China Limited",
+      "nameNormalized": "BANK OF CHINA LIMITED",
+      "nameCore": "BANK OF CHINA",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.bankofchina.com/in/en/aboutus/"
+      ],
+      "hostnames": [
+        "bankofchina.com"
+      ],
+      "address": "4th Floor, 4th North Avenue, Maker Maxcity, Bandra Kurla Complex Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_bank_of_india",
+      "name": "Bank of India",
+      "nameNormalized": "BANK OF INDIA",
+      "nameCore": "BANK OF INDIA",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://bankofindia.bank.in/"
+      ],
+      "hostnames": [
+        "bankofindia.bank.in"
+      ],
+      "address": "Star House, C-5, G Block,, Bandra Kurla Complex,, Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_bank_of_maharashtra",
+      "name": "Bank of Maharashtra",
+      "nameNormalized": "BANK OF MAHARASHTRA",
+      "nameCore": "BANK OF MAHARASHTRA",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://bankofmaharashtra.bank.in/"
+      ],
+      "hostnames": [
+        "bankofmaharashtra.bank.in"
+      ],
+      "address": "'Lok Mangal', 1501,, Shivajinagar, Pune - 411005, Maharashtra",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_bank_of_nova_scotia",
+      "name": "Bank of Nova Scotia",
+      "nameNormalized": "BANK OF NOVA SCOTIA",
+      "nameCore": "BANK OF NOVA SCOTIA",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://www.scotiabank.com/global/en/0,,6176,00.html"
+      ],
+      "hostnames": [
+        "scotiabank.com"
+      ],
+      "address": "93-94, 3 North Avenue, Maker Maxity,, Bandra Kurla Complex, Bandra (E), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_barclays_bank",
+      "name": "Barclays Bank Plc.",
+      "nameNormalized": "BARCLAYS BANK PLC",
+      "nameCore": "BARCLAYS BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.barclays.bank.in/"
+      ],
+      "hostnames": [
+        "barclays.bank.in"
+      ],
+      "address": "Level 32, Altimus, Worli Estate, Pandurang Budhkar Marg, Worli, Mumbai - 400018, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_bihar_gramin_bank",
+      "name": "Bihar Gramin Bank",
+      "nameNormalized": "BIHAR GRAMIN BANK",
+      "nameCore": "BIHAR GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.bgb.bank.in/"
+      ],
+      "hostnames": [
+        "bgb.bank.in"
+      ],
+      "address": "Head Office, Shri Vishnu Commercial Complex,, Asochak, Patna – 800030",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_bnp_paribas",
+      "name": "BNP Paribas",
+      "nameNormalized": "BNP PARIBAS",
+      "nameCore": "BNP PARIBAS",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.bnpparibas.bank.in/en/"
+      ],
+      "hostnames": [
+        "bnpparibas.bank.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_canara_bank",
+      "name": "Canara Bank",
+      "nameNormalized": "CANARA BANK",
+      "nameCore": "CANARA BANK",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://www.canarabank.bank.in/"
+      ],
+      "hostnames": [
+        "canarabank.bank.in"
+      ],
+      "address": "Head Office, No. 112,, JC Road Bengaluru - 560002, Karnataka",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_capital_small_finance_bank",
+      "name": "Capital Small Finance Bank Limited",
+      "nameNormalized": "CAPITAL SMALL FINANCE BANK LIMITED",
+      "nameCore": "CAPITAL SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://www.capital.bank.in",
+        "https://www.capital.bank.in/"
+      ],
+      "hostnames": [
+        "capital.bank.in"
+      ],
+      "address": "\"Midas Corporate Park\", 3rd Floor, 37, G.T. Road, Jalandhar - 144001, Punjab",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_central_bank_of_india",
+      "name": "Central Bank of India",
+      "nameNormalized": "CENTRAL BANK OF INDIA",
+      "nameCore": "CENTRAL BANK OF INDIA",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://centralbank.bank.in",
+        "https://centralbank.bank.in/"
+      ],
+      "hostnames": [
+        "centralbank.bank.in"
+      ],
+      "address": "Central Office, Chander Mukhi,, Nariman Point, Mumbai - 400021, Maharashtra",
+      "sourceHeadings": [
+        "List of Public Sector Banks in India",
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_chhattisgarh_gramin_bank",
+      "name": "Chhattisgarh Gramin Bank",
+      "nameNormalized": "CHHATTISGARH GRAMIN BANK",
+      "nameCore": "CHHATTISGARH GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.cgb.bank.in/"
+      ],
+      "hostnames": [
+        "cgb.bank.in"
+      ],
+      "address": "Head Office, Corporate Office-Plot No.47, Sector 24, Atal Nagar, Naya Raipur, Chhattisgarh 492018",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_citibank_n_a",
+      "name": "Citibank N.A.",
+      "nameNormalized": "CITIBANK N A",
+      "nameCore": "CITIBANK N A",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.citigroup.com/global"
+      ],
+      "hostnames": [
+        "citigroup.com"
+      ],
+      "address": "8th Floor, FIFC Building C - 54 & 55,, G Block, Bandra - Kurla Complex Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_city_union_bank",
+      "name": "City Union Bank Limited",
+      "nameNormalized": "CITY UNION BANK LIMITED",
+      "nameCore": "CITY UNION BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://cityunionbank.bank.in/"
+      ],
+      "hostnames": [
+        "cityunionbank.bank.in"
+      ],
+      "address": "149, T S R (Big) Street,, Post Box No 25, Kumbakonam - 612001, Tamil Nadu",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_coastal_local_area_bank",
+      "name": "Coastal Local Area Bank Ltd.",
+      "nameNormalized": "COASTAL LOCAL AREA BANK LTD",
+      "nameCore": "COASTAL LOCAL AREA BANK",
+      "category": "local_area_bank",
+      "categories": [
+        "local_area_bank"
+      ],
+      "websites": [
+        "https://coastal.bank.in"
+      ],
+      "hostnames": [
+        "coastal.bank.in"
+      ],
+      "address": "D.No 59-12-6, \"Graceline\", Ghantasalavari Street, Gayatri Nagar,, Vijayawada - 520008, Andhra Pradesh",
+      "sourceHeadings": [
+        "List of Local Area Banks (LAB)",
+        "Local Area Banks (LABs)"
+      ]
+    },
+    {
+      "id": "bank_cooperatieve_rabobank_u_a_co_and_ouml_peratieve_centrale_raiffeisen_boerenleenbank_b_a",
+      "name": "Cooperatieve Rabobank U.A./ Co&ouml;peratieve Centrale Raiffeisen-Boerenleenbank B.A.",
+      "nameNormalized": "COOPERATIEVE RABOBANK U A CO AND OUML PERATIEVE CENTRALE RAIFFEISEN BOERENLEENBANK B A",
+      "nameCore": "COOPERATIEVE RABOBANK U A CO AND OUML PERATIEVE CENTRALE RAIFFEISEN BOERENLEENBANK B A",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.rabobank.com/en/locate-us/asia-pacific/india/cooperatieve-rabobank-ua.html"
+      ],
+      "hostnames": [
+        "rabobank.com"
+      ],
+      "address": "6th Floor, Peninsula Tower, Peninsula Corporate Park, Lower Parel West Mumbai - 400013, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_credit_agricole_corporate_and_investment_bank",
+      "name": "Credit Agricole Corporate and Investment Bank",
+      "nameNormalized": "CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK",
+      "nameCore": "CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.ca-cib.com/en"
+      ],
+      "hostnames": [
+        "ca-cib.com"
+      ],
+      "address": "11th, 12th & 14th Floor, Hoechst House, Nariman Point, Mumbai - 400021, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_csb_bank",
+      "name": "CSB Bank Limited",
+      "nameNormalized": "CSB BANK LIMITED",
+      "nameCore": "CSB BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.csb.bank.in/"
+      ],
+      "hostnames": [
+        "csb.bank.in"
+      ],
+      "address": "CSB Bhavan, P.O Box No. 502, St. Mary's College Road, Thrissur - 680020, Kerala",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_ctbc_bank",
+      "name": "CTBC Bank Co., Limited",
+      "nameNormalized": "CTBC BANK CO LIMITED",
+      "nameCore": "CTBC BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.ctbcbank.bank.in/content/dam/cbminisite/IN/index.html"
+      ],
+      "hostnames": [
+        "ctbcbank.bank.in"
+      ],
+      "address": "Gr. Floor & 2nd Floor, Aria Tower, JW Marriott Hotel, Delhi - Aerocity, Asset Area - 4, New Delhi - 110037",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_dbs_bank_india",
+      "name": "DBS Bank India Limited",
+      "nameNormalized": "DBS BANK INDIA LIMITED",
+      "nameCore": "DBS BANK INDIA",
+      "category": "foreign_bank_subsidiary",
+      "categories": [
+        "foreign_bank",
+        "foreign_bank_subsidiary"
+      ],
+      "websites": [
+        "https://www.dbs.bank.in/in/index/default.page"
+      ],
+      "hostnames": [
+        "dbs.bank.in"
+      ],
+      "address": "GF: Nos.11 & 12, FF- Nos. 110 to 115, Capital Point, BKS Marg, Connaught Place, New Delhi - 110001",
+      "sourceHeadings": [
+        "Foreign Banks (Wholly Owned Banking Subsidiary) - Address of Registered Office",
+        "List of foreign banks having banking presence in India"
+      ]
+    },
+    {
+      "id": "bank_dbs_bank_india_limited_subsidiary_of_dbs_bank",
+      "name": "DBS Bank India Limited (Subsidiary of DBS Bank Ltd.)",
+      "nameNormalized": "DBS BANK INDIA LIMITED SUBSIDIARY OF DBS BANK LTD",
+      "nameCore": "DBS BANK INDIA LIMITED SUBSIDIARY OF DBS BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.dbs.bank.in/in/index/default.page"
+      ],
+      "hostnames": [
+        "dbs.bank.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_dcb_bank",
+      "name": "DCB Bank Limited",
+      "nameNormalized": "DCB BANK LIMITED",
+      "nameCore": "DCB BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.dcb.bank.in/"
+      ],
+      "hostnames": [
+        "dcb.bank.in"
+      ],
+      "address": "601 & 602, Peninsula Business Park,, 6th Floor, Tower A, Senapati Bapat Marg,, Lower Parel, Mumbai 400013, Maharashtra",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_deutsche_bank_a_g",
+      "name": "Deutsche Bank A.G.",
+      "nameNormalized": "DEUTSCHE BANK A G",
+      "nameCore": "DEUTSCHE BANK A G",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.deutsche.bank.in/"
+      ],
+      "hostnames": [
+        "deutsche.bank.in"
+      ],
+      "address": "Deutsche Bank House, Hazarimal Somani Marg, Fort, Mumbai - 400001, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_dhanlaxmi_bank",
+      "name": "Dhanlaxmi Bank Limited",
+      "nameNormalized": "DHANLAXMI BANK LIMITED",
+      "nameCore": "DHANLAXMI BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.dhan.bank.in/"
+      ],
+      "hostnames": [
+        "dhan.bank.in"
+      ],
+      "address": "P.B No.9, Naickanal, Thrissur - 680001, Kerala",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_doha_bank_q_p_s_c",
+      "name": "Doha Bank Q.P.S.C.",
+      "nameNormalized": "DOHA BANK Q P S C",
+      "nameCore": "DOHA BANK Q P S C",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://dohabank.co.in/"
+      ],
+      "hostnames": [
+        "dohabank.co.in"
+      ],
+      "address": "Sakhar Bhavan, Ground Floor, Plot No 230, Block No III, Backbay, Reclamation,, Nariman Point, Mumbai - 400021, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_emirates_nbd_bank_p_j_s_c",
+      "name": "Emirates NBD Bank P.J.S.C",
+      "nameNormalized": "EMIRATES NBD BANK P J S C",
+      "nameCore": "EMIRATES NBD BANK P J S C",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.emiratesnbd.bank.in/en"
+      ],
+      "hostnames": [
+        "emiratesnbd.bank.in"
+      ],
+      "address": "Ground & 1st Floor 5, North Avenue, Maker Maxity, Bandra Kurla Complex, Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_equitas_small_finance_bank",
+      "name": "Equitas Small Finance Bank Limited",
+      "nameNormalized": "EQUITAS SMALL FINANCE BANK LIMITED",
+      "nameCore": "EQUITAS SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://equitas.bank.in/"
+      ],
+      "hostnames": [
+        "equitas.bank.in"
+      ],
+      "address": "4th Floor, Spencer Plaza, Phase II, No. 769, Mount Road, Anna Salai, Chennai - 600002, Tamil Nadu",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_esaf_small_finance_bank",
+      "name": "ESAF Small Finance Bank Limited",
+      "nameNormalized": "ESAF SMALL FINANCE BANK LIMITED",
+      "nameCore": "ESAF SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://www.esaf.bank.in/"
+      ],
+      "hostnames": [
+        "esaf.bank.in"
+      ],
+      "address": "Building No. VII/83/8, ESAF Bhavan, Thrissur - Palakkad National Highway, Mannuthy, Thrissur - 680651, Kerala",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_export_import_bank_of_india",
+      "name": "Export-Import Bank of India",
+      "nameNormalized": "EXPORT IMPORT BANK OF INDIA",
+      "nameCore": "EXPORT IMPORT BANK OF INDIA",
+      "category": "financial_institution",
+      "categories": [
+        "financial_institution"
+      ],
+      "websites": [
+        "https://www.eximbankindia.in/"
+      ],
+      "hostnames": [
+        "eximbankindia.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of Financial Institutions in India"
+      ]
+    },
+    {
+      "id": "bank_federal_bank",
+      "name": "Federal Bank Limited",
+      "nameNormalized": "FEDERAL BANK LIMITED",
+      "nameCore": "FEDERAL BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.federal.bank.in/"
+      ],
+      "hostnames": [
+        "federal.bank.in"
+      ],
+      "address": "Federal Towers,, Post Box No 103, Alwaye, Ernakulam - 683101, Kerala",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_fino_payments_bank",
+      "name": "Fino Payments Bank Limited",
+      "nameNormalized": "FINO PAYMENTS BANK LIMITED",
+      "nameCore": "FINO PAYMENTS BANK",
+      "category": "payments_bank",
+      "categories": [
+        "payments_bank"
+      ],
+      "websites": [
+        "https://fino.bank.in/"
+      ],
+      "hostnames": [
+        "fino.bank.in"
+      ],
+      "address": "Mindspace Juinagar, Plot No Gen 2/1/F,, Tower 1, 8th Floor, TTC Industrial Area,, Midc Shirwane, Juinagar,, Navi Mumbai - 400706, Maharashtra",
+      "sourceHeadings": [
+        "List of Payments Banks (PB)",
+        "Payments Banks",
+        "Payments Banks (PBs)"
+      ]
+    },
+    {
+      "id": "bank_first_abu_dhabi_bank_pjsc",
+      "name": "First Abu Dhabi Bank PJSC",
+      "nameNormalized": "FIRST ABU DHABI BANK PJSC",
+      "nameCore": "FIRST ABU DHABI BANK PJSC",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.bankfab.com/en-in"
+      ],
+      "hostnames": [
+        "bankfab.com"
+      ],
+      "address": "Unit 1101 & 1201, Platina, C - 59, G Block, Kurla Complex (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_firstrand_bank",
+      "name": "FirstRand Bank Limited",
+      "nameNormalized": "FIRSTRAND BANK LIMITED",
+      "nameCore": "FIRSTRAND BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.firstrand.co.in/"
+      ],
+      "hostnames": [
+        "firstrand.co.in"
+      ],
+      "address": "1st Floor, Trent House, G-Block, Plot# C-60, Next to Citibank, Bandra Kurla Complex, Bandra (East),, Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_gujarat_gramin_bank",
+      "name": "Gujarat Gramin Bank",
+      "nameNormalized": "GUJARAT GRAMIN BANK",
+      "nameCore": "GUJARAT GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.ggb.bank.in/"
+      ],
+      "hostnames": [
+        "ggb.bank.in"
+      ],
+      "address": "Head Office, 3rd & 4th Floor, Suraj Plaza- l, Syajiganj, Vadodara-390005, Gujarat",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_gujarat_state_co_operative_bank",
+      "name": "Gujarat State Co-operative Bank Ltd.",
+      "nameNormalized": "GUJARAT STATE CO OPERATIVE BANK LTD",
+      "nameCore": "GUJARAT STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Sardar Vallabhbhai Patel Sahakar Bhavan, Near Shastrinagar BRTS Bus Stand, Ankur Road, Naranpura,, Ahmedabad - 380013, Gujarat",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_haryana_gramin_bank",
+      "name": "Haryana Gramin Bank",
+      "nameNormalized": "HARYANA GRAMIN BANK",
+      "nameCore": "HARYANA GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.shgb.bank.in/"
+      ],
+      "hostnames": [
+        "shgb.bank.in"
+      ],
+      "address": "Head Office, Plot No. 1, Sector-3, Rohtak, 124001",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_hdfc_bank",
+      "name": "HDFC Bank Limited",
+      "nameNormalized": "HDFC BANK LIMITED",
+      "nameCore": "HDFC BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.hdfc.bank.in/"
+      ],
+      "hostnames": [
+        "hdfc.bank.in"
+      ],
+      "address": "HDFC Bank House,, Senapati Bapat Marg,, Lower Parel (W), Mumbai - 400013, Maharashtra",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_himachal_pradesh_gramin_bank",
+      "name": "Himachal Pradesh Gramin Bank",
+      "nameNormalized": "HIMACHAL PRADESH GRAMIN BANK",
+      "nameCore": "HIMACHAL PRADESH GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.hpgb.bank.in/"
+      ],
+      "hostnames": [
+        "hpgb.bank.in"
+      ],
+      "address": "Head Office, Jail Road (Panjethi), Talyahar, Mandi, Himachal Pradesh - 175001",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_hong_kong_and_shanghai_banking",
+      "name": "Hong Kong and Shanghai Banking Corporation Limited",
+      "nameNormalized": "HONG KONG AND SHANGHAI BANKING CORPORATION LIMITED",
+      "nameCore": "HONG KONG AND SHANGHAI BANKING",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.hsbc.bank.in/"
+      ],
+      "hostnames": [
+        "hsbc.bank.in"
+      ],
+      "address": "52/60, Mahatma Gandhi Road,, Fort, Mumbai - 400001, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_icici_bank",
+      "name": "ICICI Bank Limited",
+      "nameNormalized": "ICICI BANK LIMITED",
+      "nameCore": "ICICI BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.icici.bank.in/"
+      ],
+      "hostnames": [
+        "icici.bank.in"
+      ],
+      "address": "ICICI Bank Tower, Near Chakli Circle,, Old Padra Road, Vadodara - 390007, Gujarat",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_idbi_bank",
+      "name": "IDBI Bank Limited",
+      "nameNormalized": "IDBI BANK LIMITED",
+      "nameCore": "IDBI BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.idbi.bank.in/"
+      ],
+      "hostnames": [
+        "idbi.bank.in"
+      ],
+      "address": "IDBI Tower, WTC Complex, Cuffe Parade Colaba, Mumbai - 400 005, Maharashtra",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_idfc_first_bank",
+      "name": "IDFC FIRST Bank Limited",
+      "nameNormalized": "IDFC FIRST BANK LIMITED",
+      "nameCore": "IDFC FIRST BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.idfcfirst.bank.in/"
+      ],
+      "hostnames": [
+        "idfcfirst.bank.in"
+      ],
+      "address": "KRM Tower, 7th Floor, No. 1 Harrington Road,, Chetpet, Chennai - 600031, Tamil Nadu",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_india_post_payments_bank",
+      "name": "India Post Payments Bank Limited",
+      "nameNormalized": "INDIA POST PAYMENTS BANK LIMITED",
+      "nameCore": "INDIA POST PAYMENTS BANK",
+      "category": "payments_bank",
+      "categories": [
+        "payments_bank"
+      ],
+      "websites": [
+        "https://ippbonline.bank.in/"
+      ],
+      "hostnames": [
+        "ippbonline.bank.in"
+      ],
+      "address": "Post Office, Speed Post Center Building,, Market Road, New Delhi - 110001",
+      "sourceHeadings": [
+        "List of Payments Banks (PB)",
+        "Payments Banks",
+        "Payments Banks (PBs)"
+      ]
+    },
+    {
+      "id": "bank_indian_bank",
+      "name": "Indian Bank",
+      "nameNormalized": "INDIAN BANK",
+      "nameCore": "INDIAN BANK",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://indianbank.bank.in/"
+      ],
+      "hostnames": [
+        "indianbank.bank.in"
+      ],
+      "address": "Corporate Office, PB No: 5555,, 254-260, Avvai Shanmugam Salai, Royapettah,, Chennai - 600014, Tamil Nadu",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_indian_overseas_bank",
+      "name": "Indian Overseas Bank",
+      "nameNormalized": "INDIAN OVERSEAS BANK",
+      "nameCore": "INDIAN OVERSEAS BANK",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://www.iob.bank.in/"
+      ],
+      "hostnames": [
+        "iob.bank.in"
+      ],
+      "address": "Central Office, 763,, Anna Salai, Chennai - 600002, Tamil Nadu",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_indusind_bank",
+      "name": "IndusInd Bank Limited",
+      "nameNormalized": "INDUSIND BANK LIMITED",
+      "nameCore": "INDUSIND BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.indusind.bank.in/"
+      ],
+      "hostnames": [
+        "indusind.bank.in"
+      ],
+      "address": "2401, Gen. Thimmayya Rd.(Cantonment), Pune - 411001, Maharashtra",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_industrial_and_commercial_bank_of_china",
+      "name": "Industrial and Commercial Bank of China Limited",
+      "nameNormalized": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA LIMITED",
+      "nameCore": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://www.icbcindia.com/"
+      ],
+      "hostnames": [
+        "icbcindia.com"
+      ],
+      "address": "801, 8th Floor, A - Wing, ONE BKC, C - 66, G Block, Bandra Kurla Complex, Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_industrial_bank_of_korea",
+      "name": "Industrial Bank of Korea",
+      "nameNormalized": "INDUSTRIAL BANK OF KOREA",
+      "nameCore": "INDUSTRIAL BANK OF KOREA",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://in.globalibk.com/iview/03/CMIBMAN0000"
+      ],
+      "hostnames": [
+        "in.globalibk.com"
+      ],
+      "address": "403, 4th Floor, World Mark 2 Asset 8, Hospitality District Aerocity, New Delhi - 110037",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_j_p_morgan_chase_bank_n_a",
+      "name": "J.P. Morgan Chase Bank N.A.",
+      "nameNormalized": "J P MORGAN CHASE BANK N A",
+      "nameCore": "J P MORGAN CHASE BANK N A",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.jpmorgan.com/IN/en/about-us"
+      ],
+      "hostnames": [
+        "jpmorgan.com"
+      ],
+      "address": "J.P Morgan Tower, Off. C.S.T Road Kalina, Santacruz (East), Mumbai - 400098, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_jammu_and_kashmir_bank",
+      "name": "Jammu & Kashmir Bank Limited",
+      "nameNormalized": "JAMMU AND KASHMIR BANK LIMITED",
+      "nameCore": "JAMMU AND KASHMIR BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://jkb.bank.in",
+        "https://jkb.bank.in/"
+      ],
+      "hostnames": [
+        "jkb.bank.in"
+      ],
+      "address": "(Corporate Headquarters), M.A. Road, Srinagar - 190001, Jammu & Kashmir",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_jammu_and_kashmir_grameen_bank",
+      "name": "Jammu and Kashmir Grameen Bank",
+      "nameNormalized": "JAMMU AND KASHMIR GRAMEEN BANK",
+      "nameCore": "JAMMU AND KASHMIR GRAMEEN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "https://www.jkgrameen.bank.in/"
+      ],
+      "hostnames": [
+        "jkgrameen.bank.in"
+      ],
+      "address": "Head Office, Near Fruit Complex, Narwal, Jammu - 180 006, Jammu & Kashmir",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_jana_small_finance_bank",
+      "name": "Jana Small finance Bank Limited",
+      "nameNormalized": "JANA SMALL FINANCE BANK LIMITED",
+      "nameCore": "JANA SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://www.jana.bank.in/"
+      ],
+      "hostnames": [
+        "jana.bank.in"
+      ],
+      "address": "The Fairway Business Park,, #10/1, 11/2 & 12/2B, Off Domlur,, Koramangala Inner Ring Road,, Next To EGL Business Park Challaghatta,, Bangalore - 560071, Karnataka",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_jharkhand_gramin_bank",
+      "name": "Jharkhand Gramin Bank",
+      "nameNormalized": "JHARKHAND GRAMIN BANK",
+      "nameCore": "JHARKHAND GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.jrgbank.bank.in/"
+      ],
+      "hostnames": [
+        "jrgbank.bank.in"
+      ],
+      "address": "Head Office, 3rd Floor, Zila Parishad Office Premises, Kutchery Road, Ranchi – 834001",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_jharkhand_state_co_operative_bank",
+      "name": "Jharkhand State Co-operative Bank Ltd.",
+      "nameNormalized": "JHARKHAND STATE CO OPERATIVE BANK LTD",
+      "nameCore": "JHARKHAND STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "3rd floor, Jharkhand State Agriculture Marketing Board Building, Itki road, Hehal,, Ranchi - 834005",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_jio_payments_bank",
+      "name": "Jio Payments Bank Limited",
+      "nameNormalized": "JIO PAYMENTS BANK LIMITED",
+      "nameCore": "JIO PAYMENTS BANK",
+      "category": "payments_bank",
+      "categories": [
+        "payments_bank"
+      ],
+      "websites": [
+        "https://www.jiopayments.bank.in/"
+      ],
+      "hostnames": [
+        "jiopayments.bank.in"
+      ],
+      "address": "1st Floor, Building 4NA, Maker Maxity,, Bandra Kurla Complex Road,, Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "List of Payments Banks (PB)",
+        "Payments Banks (PBs)"
+      ]
+    },
+    {
+      "id": "bank_jsc_vtb_bank",
+      "name": "JSC VTB Bank",
+      "nameNormalized": "JSC VTB BANK",
+      "nameCore": "JSC VTB BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://vtb.bank.in/"
+      ],
+      "hostnames": [
+        "vtb.bank.in"
+      ],
+      "address": "Hindustan Times House, First Floor, 18-20, Kasturba Gandhi Marg, New Delhi - 110001",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_karnataka_bank",
+      "name": "Karnataka Bank Limited",
+      "nameNormalized": "KARNATAKA BANK LIMITED",
+      "nameCore": "KARNATAKA BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.karnatakabank.bank.in/"
+      ],
+      "hostnames": [
+        "karnatakabank.bank.in"
+      ],
+      "address": "P.B. No. 599, Mahaveera Circle,, Kankanady Mangaluru,, Dakshina Kannada - 575002, Karnataka",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_karnataka_grameena_bank",
+      "name": "Karnataka Grameena Bank",
+      "nameNormalized": "KARNATAKA GRAMEENA BANK",
+      "nameCore": "KARNATAKA GRAMEENA BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.karnatakagb.bank.in/"
+      ],
+      "hostnames": [
+        "karnatakagb.bank.in"
+      ],
+      "address": "Head office, Post Box.No.55,, 32, Sanganakal Road,, Gandhinagar, Ballari-583103,, Karnataka",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_karur_vysya_bank",
+      "name": "Karur Vysya Bank Limited",
+      "nameNormalized": "KARUR VYSYA BANK LIMITED",
+      "nameCore": "KARUR VYSYA BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.kvb.bank.in",
+        "https://www.kvb.bank.in/"
+      ],
+      "hostnames": [
+        "kvb.bank.in"
+      ],
+      "address": "Door No. 20, Central Office,, Erode Road LNS Post,, Karur - 639002, Tamil Nadu",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_keb_hana_bank",
+      "name": "KEB Hana Bank",
+      "nameNormalized": "KEB HANA BANK",
+      "nameCore": "KEB HANA BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://global.1qbank.com/lounge/chennai/et/main.html"
+      ],
+      "hostnames": [
+        "global.1qbank.com"
+      ],
+      "address": "4th Floor, Bannari Amman Towers, No. 29, Radhakrishnan Road, Mylapore Chennai - 600004, Tamil Nadu",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_kerala_grameena_bank",
+      "name": "Kerala Grameena Bank",
+      "nameNormalized": "KERALA GRAMEENA BANK",
+      "nameCore": "KERALA GRAMEENA BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.kgb.bank.in/"
+      ],
+      "hostnames": [
+        "kgb.bank.in"
+      ],
+      "address": "Head Office, KGB Towers, AK Road, Up Hill, Malappuram - 676 505",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_kookmin_bank",
+      "name": "Kookmin Bank",
+      "nameNormalized": "KOOKMIN BANK",
+      "nameCore": "KOOKMIN BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://kbstar.bank.in/ind/main"
+      ],
+      "hostnames": [
+        "kbstar.bank.in"
+      ],
+      "address": "Unit No. 2B/2, 2nd floor Two Horizon Centre Golf Course Road, DLF Phase 5 Sector 43, Gurugram - 122002, Haryan",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_kotak_mahindra_bank",
+      "name": "Kotak Mahindra Bank Limited",
+      "nameNormalized": "KOTAK MAHINDRA BANK LIMITED",
+      "nameCore": "KOTAK MAHINDRA BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.kotak.bank.in/en/home.html"
+      ],
+      "hostnames": [
+        "kotak.bank.in"
+      ],
+      "address": "27 BKC, C27, G Block,, Bandra Kurla Complex,, Bandra (E), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_krishna_bhima_samruddhi_lab",
+      "name": "Krishna Bhima Samruddhi LAB Ltd",
+      "nameNormalized": "KRISHNA BHIMA SAMRUDDHI LAB LTD",
+      "nameCore": "KRISHNA BHIMA SAMRUDDHI LAB",
+      "category": "local_area_bank",
+      "categories": [
+        "local_area_bank"
+      ],
+      "websites": [
+        "https://www.kbsbank.bank.in/"
+      ],
+      "hostnames": [
+        "kbsbank.bank.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of Local Area Banks (LAB)"
+      ]
+    },
+    {
+      "id": "bank_krishna_bhima_samruddhi_local_area_bank",
+      "name": "Krishna Bhima Samruddhi Local Area Bank Limited",
+      "nameNormalized": "KRISHNA BHIMA SAMRUDDHI LOCAL AREA BANK LIMITED",
+      "nameCore": "KRISHNA BHIMA SAMRUDDHI LOCAL AREA BANK",
+      "category": "local_area_bank",
+      "categories": [
+        "local_area_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "1-98-9/3/28, Silicon Towers, Silicon Valley,, Image Gardens Road, Madhapur - 500081, Telangana",
+      "sourceHeadings": [
+        "Local Area Banks (LABs)"
+      ]
+    },
+    {
+      "id": "bank_madhya_pradesh_gramin_bank",
+      "name": "Madhya Pradesh Gramin Bank",
+      "nameNormalized": "MADHYA PRADESH GRAMIN BANK",
+      "nameCore": "MADHYA PRADESH GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.mpgb.bank.in/"
+      ],
+      "hostnames": [
+        "mpgb.bank.in"
+      ],
+      "address": "Head Office, 204, C21, Business Park,, Opposite Hotel Radission Blu, MR-10, Indore (M.P.) - 452010",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_maharashtra_gramin_bank",
+      "name": "Maharashtra Gramin Bank",
+      "nameNormalized": "MAHARASHTRA GRAMIN BANK",
+      "nameCore": "MAHARASHTRA GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "https://www.mahagramin.bank.in/"
+      ],
+      "hostnames": [
+        "mahagramin.bank.in"
+      ],
+      "address": "Head Office, Plot No. 42, Gut No. 33 (Part), Village Golwadi, Waluj,, Mahanagar – VI, CIDCO,, Chhatrapati Sambhajinagar",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_manipur_rural_bank",
+      "name": "Manipur Rural Bank",
+      "nameNormalized": "MANIPUR RURAL BANK",
+      "nameCore": "MANIPUR RURAL BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.manipurrural.bank.in/"
+      ],
+      "hostnames": [
+        "manipurrural.bank.in"
+      ],
+      "address": "Keishampat,, Imphal West - 795 001, Manipur",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_mashreq_bank_p_s_c",
+      "name": "Mashreq bank P.S.C",
+      "nameNormalized": "MASHREQ BANK P S C",
+      "nameCore": "MASHREQ BANK P S C",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://mashreq.bank.in/en/corporate/"
+      ],
+      "hostnames": [
+        "mashreq.bank.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of foreign banks having banking presence in India"
+      ]
+    },
+    {
+      "id": "bank_mashreqbank_p_s_c",
+      "name": "Mashreqbank P.S.C",
+      "nameNormalized": "MASHREQBANK P S C",
+      "nameCore": "MASHREQBANK P S C",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://mashreq.bank.in/en/corporate/"
+      ],
+      "hostnames": [
+        "mashreq.bank.in"
+      ],
+      "address": "10th Floor, TCG Financial Centre, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_meghalaya_rural_bank",
+      "name": "Meghalaya Rural Bank",
+      "nameNormalized": "MEGHALAYA RURAL BANK",
+      "nameCore": "MEGHALAYA RURAL BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.meghalayaruralbank.bank.in/"
+      ],
+      "hostnames": [
+        "meghalayaruralbank.bank.in"
+      ],
+      "address": "Head Office, K.J.P. Conference Hall, Barik, Shillong, Meghalaya- 793001",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_mizoram_co_operative_apex_bank",
+      "name": "Mizoram Co-operative Apex Bank Ltd.",
+      "nameNormalized": "MIZORAM CO OPERATIVE APEX BANK LTD",
+      "nameCore": "MIZORAM CO OPERATIVE APEX BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Tuikual 'South', Near Aizawl Tennis Court, Aizawl-796001, Mizoram",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_mizoram_rural_bank",
+      "name": "Mizoram Rural Bank",
+      "nameNormalized": "MIZORAM RURAL BANK",
+      "nameCore": "MIZORAM RURAL BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.mrb.bank.in/"
+      ],
+      "hostnames": [
+        "mrb.bank.in"
+      ],
+      "address": "Head Office, B-21, MINECO, Khatla, Aizawl, Mizoram- 796001",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_mizuho_bank",
+      "name": "Mizuho Bank Ltd.",
+      "nameNormalized": "MIZUHO BANK LTD",
+      "nameCore": "MIZUHO BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.mizuhogroup.com/bank"
+      ],
+      "hostnames": [
+        "mizuhogroup.com"
+      ],
+      "address": "Level 17, Tower - A, Peninsula Business Park, Senapati Bapat Marg, Lower Parel Mumbai - 400013, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_mufg_bank",
+      "name": "MUFG Bank, Ltd.",
+      "nameNormalized": "MUFG BANK LTD",
+      "nameCore": "MUFG BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://www.bk.mufg.jp/global/globalnetwork/asiaoceania/mumbai.html"
+      ],
+      "hostnames": [
+        "bk.mufg.jp"
+      ],
+      "address": "602 & 603, Level 6, Inspire BKC, &lsquo;G' Block, BKC Main Road, Bandra Kurla Complex, Bandra (E), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_nagaland_rural_bank",
+      "name": "Nagaland Rural Bank",
+      "nameNormalized": "NAGALAND RURAL BANK",
+      "nameCore": "NAGALAND RURAL BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.nrb.bank.in/"
+      ],
+      "hostnames": [
+        "nrb.bank.in"
+      ],
+      "address": "Head Office, AWO Shopping Complex, 2nd Floor, D-Block, Near Congress Bhawan, Kohima - 797001",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_nainital_bank",
+      "name": "Nainital Bank Limited",
+      "nameNormalized": "NAINITAL BANK LIMITED",
+      "nameCore": "NAINITAL BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.nainitalbank.bank.in/english/home.aspx"
+      ],
+      "hostnames": [
+        "nainitalbank.bank.in"
+      ],
+      "address": "GB Pant Road,, Mallital, Nainital - 263001, Uttarakhand",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_national_bank_for_agriculture_and_rural_development",
+      "name": "National Bank for Agriculture and Rural Development",
+      "nameNormalized": "NATIONAL BANK FOR AGRICULTURE AND RURAL DEVELOPMENT",
+      "nameCore": "NATIONAL BANK FOR AGRICULTURE AND RURAL DEVELOPMENT",
+      "category": "financial_institution",
+      "categories": [
+        "financial_institution"
+      ],
+      "websites": [
+        "http://www.nabard.org/"
+      ],
+      "hostnames": [
+        "nabard.org"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of Financial Institutions in India"
+      ]
+    },
+    {
+      "id": "bank_national_housing_bank",
+      "name": "National Housing Bank",
+      "nameNormalized": "NATIONAL HOUSING BANK",
+      "nameCore": "NATIONAL HOUSING BANK",
+      "category": "financial_institution",
+      "categories": [
+        "financial_institution"
+      ],
+      "websites": [
+        "https://nhb.org.in/"
+      ],
+      "hostnames": [
+        "nhb.org.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of Financial Institutions in India"
+      ]
+    },
+    {
+      "id": "bank_natwest_markets",
+      "name": "NatWest Markets Plc",
+      "nameNormalized": "NATWEST MARKETS PLC",
+      "nameCore": "NATWEST MARKETS",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.natwestmarkets.bank.in/index.html"
+      ],
+      "hostnames": [
+        "natwestmarkets.bank.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_nong_hyup_bank",
+      "name": "Nong Hyup Bank",
+      "nameNormalized": "NONG HYUP BANK",
+      "nameCore": "NONG HYUP BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://nonghyup.bank.in/index.jsp"
+      ],
+      "hostnames": [
+        "nonghyup.bank.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of foreign banks having banking presence in India"
+      ]
+    },
+    {
+      "id": "bank_nonghyup_bank",
+      "name": "NongHyup Bank",
+      "nameNormalized": "NONGHYUP BANK",
+      "nameCore": "NONGHYUP BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://nonghyup.bank.in/index.jsp"
+      ],
+      "hostnames": [
+        "nonghyup.bank.in"
+      ],
+      "address": "Advant IT Park, Unit No 108, 1st Floor, Tower C, Plot # 7, Sector 142, Noida - 201305, District - Gautam Budh Nagar, Uttar Pradesh",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_north_east_small_finance_bank",
+      "name": "North East Small finance Bank Ltd",
+      "nameNormalized": "NORTH EAST SMALL FINANCE BANK LTD",
+      "nameCore": "NORTH EAST SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://slice.bank.in/"
+      ],
+      "hostnames": [
+        "slice.bank.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)"
+      ]
+    },
+    {
+      "id": "bank_nsdl_payments_bank",
+      "name": "NSDL Payments Bank Limited",
+      "nameNormalized": "NSDL PAYMENTS BANK LIMITED",
+      "nameCore": "NSDL PAYMENTS BANK",
+      "category": "payments_bank",
+      "categories": [
+        "payments_bank"
+      ],
+      "websites": [
+        "https://nsdlpayments.bank.in/"
+      ],
+      "hostnames": [
+        "nsdlpayments.bank.in"
+      ],
+      "address": "401, 4th Floor,, Tower 3, One International Center,, Senapati Bapat Marg, Prabhadevi,, Mumbai - 400013, Maharashtra",
+      "sourceHeadings": [
+        "Payments Banks",
+        "Payments Banks (PBs)"
+      ]
+    },
+    {
+      "id": "bank_odisha_grameen_bank",
+      "name": "Odisha Grameen Bank",
+      "nameNormalized": "ODISHA GRAMEEN BANK",
+      "nameCore": "ODISHA GRAMEEN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.odishabank.bank.in/"
+      ],
+      "hostnames": [
+        "odishabank.bank.in"
+      ],
+      "address": "Bhubaneswar, AT - Gandamunda, PO - Khandagiri, Jagamara-Sundarpada Road, Bhubaneswar, Dist - Khurda, Odisha- 751030",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_paytm_payments_bank",
+      "name": "Paytm Payments Bank Limited",
+      "nameNormalized": "PAYTM PAYMENTS BANK LIMITED",
+      "nameCore": "PAYTM PAYMENTS BANK",
+      "category": "payments_bank",
+      "categories": [
+        "payments_bank"
+      ],
+      "websites": [
+        "https://www.paytm.bank.in/"
+      ],
+      "hostnames": [
+        "paytm.bank.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of Payments Banks (PB)",
+        "Payments Banks"
+      ]
+    },
+    {
+      "id": "bank_pt_bank_maybank_indonesia_tbk",
+      "name": "PT Bank Maybank Indonesia TBK",
+      "nameNormalized": "PT BANK MAYBANK INDONESIA TBK",
+      "nameCore": "PT BANK MAYBANK INDONESIA TBK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.maybank.co.in/"
+      ],
+      "hostnames": [
+        "maybank.co.in"
+      ],
+      "address": "702, 7th Floor, One India Bulls Centre, Tower 2 - B, Elphinstone Road (West) Mumbai - 400013, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_puducherry_grama_bank",
+      "name": "Puducherry Grama Bank",
+      "nameNormalized": "PUDUCHERRY GRAMA BANK",
+      "nameCore": "PUDUCHERRY GRAMA BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.pygb.bank.in/"
+      ],
+      "hostnames": [
+        "pygb.bank.in"
+      ],
+      "address": "Head Office, 415, Kamaraj Salai, Saram, Puducherry - 605 013",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_punjab_and_sind_bank",
+      "name": "Punjab & Sind Bank",
+      "nameNormalized": "PUNJAB AND SIND BANK",
+      "nameCore": "PUNJAB AND SIND BANK",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://punjabandsind.bank.in/"
+      ],
+      "hostnames": [
+        "punjabandsind.bank.in"
+      ],
+      "address": "21, Rajendra Place, New Delhi - 110008",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_punjab_gramin_bank",
+      "name": "Punjab Gramin Bank",
+      "nameNormalized": "PUNJAB GRAMIN BANK",
+      "nameCore": "PUNJAB GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.pgb.bank.in/"
+      ],
+      "hostnames": [
+        "pgb.bank.in"
+      ],
+      "address": "Head Office, Markfed Road, Kapurthala-144601, Punjab",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_punjab_national_bank",
+      "name": "Punjab National Bank",
+      "nameNormalized": "PUNJAB NATIONAL BANK",
+      "nameCore": "PUNJAB NATIONAL BANK",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://pnb.bank.in/"
+      ],
+      "hostnames": [
+        "pnb.bank.in"
+      ],
+      "address": "Head Office, Plot no. 4 Sector 10,, Dwarka, New Delhi - 110075",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_qatar_national_bank_q_p_s_c",
+      "name": "Qatar National Bank (Q.P.S.C.)",
+      "nameNormalized": "QATAR NATIONAL BANK Q P S C",
+      "nameCore": "QATAR NATIONAL BANK Q P S C",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://qnb.bank.in/sites/qnb/qnbindia/page/en/en-home.html"
+      ],
+      "hostnames": [
+        "qnb.bank.in"
+      ],
+      "address": "G - 1A, 4 North Avenue, Maker Maxity, Bandra Kurla Complex, Bandra (East) Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_rajasthan_gramin_bank",
+      "name": "Rajasthan Gramin Bank",
+      "nameNormalized": "RAJASTHAN GRAMIN BANK",
+      "nameCore": "RAJASTHAN GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.rgb.bank.in/"
+      ],
+      "hostnames": [
+        "rgb.bank.in"
+      ],
+      "address": "Head Office Jaipur, Camp office- Jodhpur, Tulsi Tower, 9th B Road,, Sardarpura, Jodhpur, 342003",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_rbl_bank",
+      "name": "RBL Bank Limited",
+      "nameNormalized": "RBL BANK LIMITED",
+      "nameCore": "RBL BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.rbl.bank.in/"
+      ],
+      "hostnames": [
+        "rbl.bank.in"
+      ],
+      "address": "Shahupuri, Kolhapur - 416001, Maharashtra",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_sberbank",
+      "name": "Sberbank",
+      "nameNormalized": "SBERBANK",
+      "nameCore": "SBERBANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://www.sberbank.co.in/"
+      ],
+      "hostnames": [
+        "sberbank.co.in"
+      ],
+      "address": "Upper ground floor (UGF) & fourth (4th) floor, Birla tower, 25-Barakhamba road, New Delhi - 110001",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_sbm_bank_india",
+      "name": "SBM Bank (India) Limited",
+      "nameNormalized": "SBM BANK INDIA LIMITED",
+      "nameCore": "SBM BANK INDIA",
+      "category": "foreign_bank_subsidiary",
+      "categories": [
+        "foreign_bank",
+        "foreign_bank_subsidiary"
+      ],
+      "websites": [
+        "https://www.sbm.bank.in/"
+      ],
+      "hostnames": [
+        "sbm.bank.in"
+      ],
+      "address": "&lsquo;The Capital' 3rd Floor G- Block, Bandra-Kurla Complex Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Wholly Owned Banking Subsidiary) - Address of Registered Office",
+        "List of foreign banks having banking presence in India"
+      ]
+    },
+    {
+      "id": "bank_sbm_bank_india_limited_subsidiary_of_sbm_group",
+      "name": "SBM Bank (India) Limited (Subsidiary of SBM Group)",
+      "nameNormalized": "SBM BANK INDIA LIMITED SUBSIDIARY OF SBM GROUP",
+      "nameCore": "SBM BANK INDIA LIMITED SUBSIDIARY OF SBM GROUP",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.sbm.bank.in/"
+      ],
+      "hostnames": [
+        "sbm.bank.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_shinhan_bank",
+      "name": "Shinhan Bank",
+      "nameNormalized": "SHINHAN BANK",
+      "nameCore": "SHINHAN BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://in.shinhanglobal.com/"
+      ],
+      "hostnames": [
+        "in.shinhanglobal.com"
+      ],
+      "address": "Unit No. 701 / 702, 7th Floor, Peninsula Tower 1, Peninsula Corporate Park, G. K. Marg, Lower Parel, Mumbai - 400013, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_shivalik_small_finance_bank",
+      "name": "Shivalik Small Finance Bank Limited",
+      "nameNormalized": "SHIVALIK SMALL FINANCE BANK LIMITED",
+      "nameCore": "SHIVALIK SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://shivalik.bank.in/"
+      ],
+      "hostnames": [
+        "shivalik.bank.in"
+      ],
+      "address": "501, Salcon Aurum, Jasola District Centre, New Delhi - 110025",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_slice_small_finance_bank",
+      "name": "slice Small Finance Bank Limited",
+      "nameNormalized": "SLICE SMALL FINANCE BANK LIMITED",
+      "nameCore": "SLICE SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://slice.bank.in/"
+      ],
+      "hostnames": [
+        "slice.bank.in"
+      ],
+      "address": "G.S. Point, G.S. Road, Vill- Sarumataria, Opp. Dispur Fire Station,, Sachivalaya Dispur, Guwahati - 781006, Assam",
+      "sourceHeadings": [
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_small_industries_development_bank_of_india",
+      "name": "Small Industries Development Bank of India",
+      "nameNormalized": "SMALL INDUSTRIES DEVELOPMENT BANK OF INDIA",
+      "nameCore": "SMALL INDUSTRIES DEVELOPMENT BANK OF INDIA",
+      "category": "financial_institution",
+      "categories": [
+        "financial_institution"
+      ],
+      "websites": [
+        "https://www.sidbi.in/"
+      ],
+      "hostnames": [
+        "sidbi.in"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "List of Financial Institutions in India"
+      ]
+    },
+    {
+      "id": "bank_societe_generale",
+      "name": "Societe Generale",
+      "nameNormalized": "SOCIETE GENERALE",
+      "nameCore": "SOCIETE GENERALE",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.societegenerale.asia/en/country-details/country/india-2/"
+      ],
+      "hostnames": [
+        "societegenerale.asia"
+      ],
+      "address": null,
+      "sourceHeadings": [
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_sonali_bank",
+      "name": "Sonali Bank Ltd.",
+      "nameNormalized": "SONALI BANK LTD",
+      "nameCore": "SONALI BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://www.sonalibank.in/"
+      ],
+      "hostnames": [
+        "sonalibank.in"
+      ],
+      "address": "Wachel Molla Mansion, 1st Floor, 8, Lenin Sarani, Kolkata - 700013, West Bengal",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India",
+        "List of foreign banks having banking presence in India"
+      ]
+    },
+    {
+      "id": "bank_south_indian_bank",
+      "name": "South Indian Bank Limited",
+      "nameNormalized": "SOUTH INDIAN BANK LIMITED",
+      "nameCore": "SOUTH INDIAN BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.southindianbank.bank.in/"
+      ],
+      "hostnames": [
+        "southindianbank.bank.in"
+      ],
+      "address": "SIB House, T.B. Road,, Mission Quarters, Post Box No 28, Thrissur - 680001, Kerala",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_standard_chartered_bank",
+      "name": "Standard Chartered Bank",
+      "nameNormalized": "STANDARD CHARTERED BANK",
+      "nameCore": "STANDARD CHARTERED BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://www.sc.bank.in/"
+      ],
+      "hostnames": [
+        "sc.bank.in"
+      ],
+      "address": "Crescenzo Parini, 3A Floor, C 38 - 39, G Block, Bandra Kurla Complex, Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_state_bank_of_india",
+      "name": "State Bank of India",
+      "nameNormalized": "STATE BANK OF INDIA",
+      "nameCore": "STATE BANK OF INDIA",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://sbi.bank.in/"
+      ],
+      "hostnames": [
+        "sbi.bank.in"
+      ],
+      "address": "Corporate Centre, State Bank Bhavan, Madame Cama Road,, Nariman Point, Mumbai - 400021, Maharashtra",
+      "sourceHeadings": [
+        "SBI & Nationalised Banks",
+        "State Bank of India"
+      ]
+    },
+    {
+      "id": "bank_sumitomo_mitsui_banking",
+      "name": "Sumitomo Mitsui Banking Corporation",
+      "nameNormalized": "SUMITOMO MITSUI BANKING CORPORATION",
+      "nameCore": "SUMITOMO MITSUI BANKING",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "http://www.smbc.co.jp/global/india/"
+      ],
+      "hostnames": [
+        "smbc.co.jp"
+      ],
+      "address": "Unit no. 601, 6th floor, Platina plot No. C-59, G Block, Bandra Kurla Complex, Bandra (E), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_suryoday_small_finance_bank",
+      "name": "Suryoday Small Finance Bank Limited",
+      "nameNormalized": "SURYODAY SMALL FINANCE BANK LIMITED",
+      "nameCore": "SURYODAY SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://suryoday.bank.in/"
+      ],
+      "hostnames": [
+        "suryoday.bank.in"
+      ],
+      "address": "1101, Sharda Terraces,, Plot 65, Sector 11, CBD Belapur, Navi Mumbai - 400614, Maharashtra",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_tamil_nadu_grama_bank",
+      "name": "Tamil Nadu Grama Bank",
+      "nameNormalized": "TAMIL NADU GRAMA BANK",
+      "nameCore": "TAMIL NADU GRAMA BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.tngb.bank.in/"
+      ],
+      "hostnames": [
+        "tngb.bank.in"
+      ],
+      "address": "Head Office, No 6, Yercaud Road, Hasthampatti, Salem – 636 007, Tamil Nadu",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_tamilnad_mercantile_bank",
+      "name": "Tamilnad Mercantile Bank Limited",
+      "nameNormalized": "TAMILNAD MERCANTILE BANK LIMITED",
+      "nameCore": "TAMILNAD MERCANTILE BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.tmb.bank.in/"
+      ],
+      "hostnames": [
+        "tmb.bank.in"
+      ],
+      "address": "57, Victoria Extension Road, Thoothukudi - 628002, Tamil Nadu",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    },
+    {
+      "id": "bank_telangana_grameena_bank",
+      "name": "Telangana Grameena Bank",
+      "nameNormalized": "TELANGANA GRAMEENA BANK",
+      "nameCore": "TELANGANA GRAMEENA BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.tgb.bank.in/"
+      ],
+      "hostnames": [
+        "tgb.bank.in"
+      ],
+      "address": "Head Office, H.No: 2-1-520, 2nd Floor, Vijaya Sri Sai Celestia, St. No.9, Shankermutt Road, Nallakunta, Hyderabad, Telangana-500044.",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_the_andaman_and_nicobar_state_co_operative_bank",
+      "name": "The Andaman and Nicobar State Co-operative Bank Ltd.",
+      "nameNormalized": "THE ANDAMAN AND NICOBAR STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE ANDAMAN AND NICOBAR STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "P.B.No.289, 98, Maulana Azad Road, Port Blair - 744 101, Andaman and Nicobar Isls.",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_andhra_pradesh_state_co_operative_bank",
+      "name": "The Andhra Pradesh State Co-operative Bank Ltd.",
+      "nameNormalized": "THE ANDHRA PRADESH STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE ANDHRA PRADESH STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Door No. 27-29-28, NTR Sahakara Bhavan,, Governorpet,, Vijayawada - 520 002, Andhra Pradesh",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_arunachal_pradesh_state_co_operative_apex_bank",
+      "name": "The Arunachal Pradesh State co-operative Apex Bank Ltd.",
+      "nameNormalized": "THE ARUNACHAL PRADESH STATE CO OPERATIVE APEX BANK LTD",
+      "nameCore": "THE ARUNACHAL PRADESH STATE CO OPERATIVE APEX BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "P.O.& T. Naharlagun \"D\" Sector, Near Gen. Hospital, District - Papum Pare, Naharlagun - 791 110, Arunachal Pradesh",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_assam_co_operative_apex_bank",
+      "name": "The Assam Co-operative Apex Bank Ltd.",
+      "nameNormalized": "THE ASSAM CO OPERATIVE APEX BANK LTD",
+      "nameCore": "THE ASSAM CO OPERATIVE APEX BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "P.B.No.151, Apex Bank Building, Hem Barua Path, Pan Bazar, Guwahati - 781 001, Assam",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_bihar_state_co_operative_bank_ltd_patna",
+      "name": "The Bihar State Co-operative Bank Ltd., Patna",
+      "nameNormalized": "THE BIHAR STATE CO OPERATIVE BANK LTD PATNA",
+      "nameCore": "THE BIHAR STATE CO OPERATIVE BANK LTD PATNA",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Ashok Rajpath, Patna - 800 004.",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_chandigarh_state_co_operative_bank",
+      "name": "The Chandigarh State Co-operative Bank Ltd.",
+      "nameNormalized": "THE CHANDIGARH STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE CHANDIGARH STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "S.C.O.1088 - 89, Sector - 22 - B, Chandigarh - 160 022.",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_chhattisgarh_rajya_sahakari_bank_maryadit",
+      "name": "The Chhattisgarh Rajya Sahakari Bank Maryadit",
+      "nameNormalized": "THE CHHATTISGARH RAJYA SAHAKARI BANK MARYADIT",
+      "nameCore": "THE CHHATTISGARH RAJYA SAHAKARI BANK MARYADIT",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Indira Gandhi Commercial Compound, Pandari, Raipur - 492 001, Chhattisgarh",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_daman_and_diu_state_co_operative_bank",
+      "name": "The Daman and Diu State Co-operative Bank Ltd.",
+      "nameNormalized": "THE DAMAN AND DIU STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE DAMAN AND DIU STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "H.No. 14/54, 1st Floor, Dilip Nagar, Nani Daman -396210",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_delhi_state_co_operative_bank",
+      "name": "The Delhi State Co-operative Bank Ltd.",
+      "nameNormalized": "THE DELHI STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE DELHI STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "31, Netaji Subhash Marg, Daryaganj, New Delhi - 110 002.",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_goa_state_co_operative_bank",
+      "name": "The Goa State Co-operative Bank Ltd.",
+      "nameNormalized": "THE GOA STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE GOA STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "H.O. - &ldquo;Sahakar Sankul&rdquo;, EDC Complex, Patto Plaza, P.B.No.183, Panaji - 403 001., Goa",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_haryana_state_co_operative_apex_bank",
+      "name": "The Haryana State Co-operative Apex Bank Ltd.",
+      "nameNormalized": "THE HARYANA STATE CO OPERATIVE APEX BANK LTD",
+      "nameCore": "THE HARYANA STATE CO OPERATIVE APEX BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "S. C. O. No. 78-80, Bank Square, Sector 17-B, P.B.No.7, Chandigarh - 160 017.",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_himachal_pradesh_state_co_operative_bank",
+      "name": "The Himachal Pradesh State Co-operative Bank Ltd.",
+      "nameNormalized": "THE HIMACHAL PRADESH STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE HIMACHAL PRADESH STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "No.1, Bank Building, 2nd Floor, The Mall, Shimla - 171 001, Himachal Pradesh",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_jammu_and_kashmir_state_co_operative_bank",
+      "name": "The Jammu and Kashmir State Co-operative Bank Ltd.",
+      "nameNormalized": "THE JAMMU AND KASHMIR STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE JAMMU AND KASHMIR STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "&ldquo;ATHWAS GAHH&rdquo;, Silk Factory Road, Raj Bagh, Srinagar - 190 008, Jammu & Kashmir",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_karnataka_state_co_operative_apex_bank",
+      "name": "The Karnataka State Co-operative Apex Bank Ltd.",
+      "nameNormalized": "THE KARNATAKA STATE CO OPERATIVE APEX BANK LTD",
+      "nameCore": "THE KARNATAKA STATE CO OPERATIVE APEX BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "&ldquo;Uthunga&rdquo;, No.1, Pampamahakavi Road, P.B.No.1854, Chamrajpeth, Bangalore - 560 018, Karnataka",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_kerala_state_co_operative_bank",
+      "name": "The Kerala State Co-operative Bank Ltd.",
+      "nameNormalized": "THE KERALA STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE KERALA STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "\"COBANK Towers\", Vikas Bhavan, P.O.Palayam, P.B.No.6515, Thiruvananthapuram - 695 033, Kerala",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_madhya_pradesh_rajya_sahakari_bank_maryadit",
+      "name": "The Madhya Pradesh Rajya Sahakari Bank Maryadit",
+      "nameNormalized": "THE MADHYA PRADESH RAJYA SAHAKARI BANK MARYADIT",
+      "nameCore": "THE MADHYA PRADESH RAJYA SAHAKARI BANK MARYADIT",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Multistoryed Building, T.T.Nagar, New Market, P.B.No.315, Bhopal - 462 003, Madhya Pradesh",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_maharashtra_state_co_operative_bank",
+      "name": "The Maharashtra State Co-operative Bank Ltd.",
+      "nameNormalized": "THE MAHARASHTRA STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE MAHARASHTRA STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "9, Maharashtra Chamber of Commerce Lane, Fort, Mumbai - 400 001, Maharashtra",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_manipur_state_co_operative_bank",
+      "name": "The Manipur State Co-operative Bank Ltd.",
+      "nameNormalized": "THE MANIPUR STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE MANIPUR STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Assembly road, Imphal - 795 001, Manipur",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_meghalaya_co_operative_apex_bank",
+      "name": "The Meghalaya Co-operative Apex Bank Ltd.",
+      "nameNormalized": "THE MEGHALAYA CO OPERATIVE APEX BANK LTD",
+      "nameCore": "THE MEGHALAYA CO OPERATIVE APEX BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Apex Bank Building, M.G.Road, P.O.Shillong, Shillong - 793 001, Meghalaya",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_nagaland_state_co_operative_bank",
+      "name": "The Nagaland State Co-operative Bank Ltd.",
+      "nameNormalized": "THE NAGALAND STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE NAGALAND STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "P.B.No.151, Head Office-Dimapur, Dimapur - 797 112, Nagaland",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_odisha_state_co_operative_bank",
+      "name": "The Odisha State Co-operative Bank Ltd.",
+      "nameNormalized": "THE ODISHA STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE ODISHA STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Pandit Jawaharlal Nehru Marg, Bhubaneswar - 751 001, Odisha",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_puducherry_state_co_operative_bank",
+      "name": "The Puducherry State Co-operative Bank Ltd.",
+      "nameNormalized": "THE PUDUCHERRY STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE PUDUCHERRY STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "No.204, East-Coast Road, O.K. Palayam, Mudaliarpet, Puducherry - 605 004",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_punjab_state_co_operative_bank",
+      "name": "The Punjab State Co-operative Bank Ltd.",
+      "nameNormalized": "THE PUNJAB STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE PUNJAB STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "S.C.O.No.175-187, Sector -34-A, Chandigarh - 160 022., Punjab",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_rajasthan_state_co_operative_bank",
+      "name": "The Rajasthan State Co-operative Bank Ltd.",
+      "nameNormalized": "THE RAJASTHAN STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE RAJASTHAN STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "DC-1, Lalkothi Shopping Centre, Opposite Nehru Balodyan,Tonk Road, Jaipur - 302 015, Rajasthan",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_sikkim_state_co_operative_bank",
+      "name": "The Sikkim State Co-operative Bank Ltd.",
+      "nameNormalized": "THE SIKKIM STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE SIKKIM STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "National Highway No.31 A, Near Metro Point, Tadong, Gangtok, Sikkim - 737 101",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_tamil_nadu_state_apex_co_operative_bank",
+      "name": "The Tamil Nadu State Apex Co-operative Bank Ltd.",
+      "nameNormalized": "THE TAMIL NADU STATE APEX CO OPERATIVE BANK LTD",
+      "nameCore": "THE TAMIL NADU STATE APEX CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "233, N.S.C. Bose Road, P.B.No.226, Chennai - 600 001, Tamil Nadu",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_telangana_state_cooperative_apex_bank",
+      "name": "The Telangana State Cooperative Apex Bank Ltd.",
+      "nameNormalized": "THE TELANGANA STATE COOPERATIVE APEX BANK LTD",
+      "nameCore": "THE TELANGANA STATE COOPERATIVE APEX BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Dr. Y. S. Rajasekhar Reddy Sahakara Bhavan, 4-1-441, HO. Troop Bazar, Hyderabad - 500 001, Telangana",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_uttarakhand_state_co_operative_bank",
+      "name": "The Uttarakhand State Co-operative Bank Ltd.",
+      "nameNormalized": "THE UTTARAKHAND STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE UTTARAKHAND STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Administrative Building, Head office - Haldwani, (Near Saras Market), Nanital Road, Haldwani, Nainital - 263139, Uttarakhand",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_the_west_bengal_state_co_operative_bank",
+      "name": "The West Bengal State Co-operative Bank Ltd.",
+      "nameNormalized": "THE WEST BENGAL STATE CO OPERATIVE BANK LTD",
+      "nameCore": "THE WEST BENGAL STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "24-A, Waterloo Street, Kolkata - 700 069, West Bengal",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_tripura_gramin_bank",
+      "name": "Tripura Gramin Bank",
+      "nameNormalized": "TRIPURA GRAMIN BANK",
+      "nameCore": "TRIPURA GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "http://www.tripuragramin.bank.in/"
+      ],
+      "hostnames": [
+        "tripuragramin.bank.in"
+      ],
+      "address": "Head Office, Abhoynagar Agartala, West Tripura - 799005",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_tripura_state_co_operative_bank",
+      "name": "Tripura State Co-operative Bank Ltd.",
+      "nameNormalized": "TRIPURA STATE CO OPERATIVE BANK LTD",
+      "nameCore": "TRIPURA STATE CO OPERATIVE BANK",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "Head Office, 1st Floor, Co-Operative Bank Building Mantribari Road Extension, Post Office Chowmuhani, Agartala, Dist.- West Tripura, Tripura- 799001",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_uco_bank",
+      "name": "UCO Bank",
+      "nameNormalized": "UCO BANK",
+      "nameCore": "UCO BANK",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://www.uco.bank.in/"
+      ],
+      "hostnames": [
+        "uco.bank.in"
+      ],
+      "address": "Head Office,, 10, B T M Sarani,, Kolkata - 700001, West Bengal",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_ujjivan_small_finance_bank",
+      "name": "Ujjivan Small Finance Bank Limited",
+      "nameNormalized": "UJJIVAN SMALL FINANCE BANK LIMITED",
+      "nameCore": "UJJIVAN SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://www.ujjivansfb.bank.in/"
+      ],
+      "hostnames": [
+        "ujjivansfb.bank.in"
+      ],
+      "address": "Grape Garden, No. 27, 3rd 'A' Cross, 18th Main, Koramangala, 6th Block, Bengaluru - 560095, Karnataka",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_union_bank_of_india",
+      "name": "Union Bank of India",
+      "nameNormalized": "UNION BANK OF INDIA",
+      "nameCore": "UNION BANK OF INDIA",
+      "category": "public_sector_bank",
+      "categories": [
+        "public_sector_bank"
+      ],
+      "websites": [
+        "https://www.unionbankonline.bank.in/"
+      ],
+      "hostnames": [
+        "unionbankonline.bank.in"
+      ],
+      "address": "Union Bank Bhavan, 239,, Vidhan Bhavan Marg,, Nariman Point Mumbai - 400021, Maharashtra",
+      "sourceHeadings": [
+        "Nationalised Banks",
+        "SBI & Nationalised Banks"
+      ]
+    },
+    {
+      "id": "bank_united_overseas_bank",
+      "name": "United Overseas Bank Limited",
+      "nameNormalized": "UNITED OVERSEAS BANK LIMITED",
+      "nameCore": "UNITED OVERSEAS BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://uob.bank.in/"
+      ],
+      "hostnames": [
+        "uob.bank.in"
+      ],
+      "address": "3 North Avenue, Maker Maxity, Unit 31 & 37, 3rd floor, Bandra Kurla Complex, Bandra (East), Mumbai - 400051, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_unity_small_finance_bank",
+      "name": "Unity Small Finance Bank Limited",
+      "nameNormalized": "UNITY SMALL FINANCE BANK LIMITED",
+      "nameCore": "UNITY SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://unity.bank.in/"
+      ],
+      "hostnames": [
+        "unity.bank.in"
+      ],
+      "address": "Unit No.1201,1202 And 1203,, 12th Floor Ansal Bhawan 16, K.G Marg, New Delhi - 110001",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_utkarsh_small_finance_bank",
+      "name": "Utkarsh Small Finance Bank Limited",
+      "nameNormalized": "UTKARSH SMALL FINANCE BANK LIMITED",
+      "nameCore": "UTKARSH SMALL FINANCE BANK",
+      "category": "small_finance_bank",
+      "categories": [
+        "small_finance_bank"
+      ],
+      "websites": [
+        "https://www.utkarsh.bank.in/"
+      ],
+      "hostnames": [
+        "utkarsh.bank.in"
+      ],
+      "address": "Utkarsh Tower, Nh - 31 (Airport Road), Sehmalpur, Kazi Sarai, Harhua - 221105, Uttar Pradesh",
+      "sourceHeadings": [
+        "List of Small Finance Banks (SFB)",
+        "Small Finance Banks",
+        "Small Finance Banks (SFBs)"
+      ]
+    },
+    {
+      "id": "bank_uttar_pradesh_gramin_bank",
+      "name": "Uttar Pradesh Gramin Bank",
+      "nameNormalized": "UTTAR PRADESH GRAMIN BANK",
+      "nameCore": "UTTAR PRADESH GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "https://upgb.bank.in/"
+      ],
+      "hostnames": [
+        "upgb.bank.in"
+      ],
+      "address": "Head Office, 2nd and 3rd Floor, NBCC Commercial Complex, Vardan Khand Gomti Nagar Extension, Lucknow- 226010",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_uttar_pradesh_state_co_operative_bank_limited_lucknow",
+      "name": "Uttar Pradesh State Co-operative Bank Limited, Lucknow",
+      "nameNormalized": "UTTAR PRADESH STATE CO OPERATIVE BANK LIMITED LUCKNOW",
+      "nameCore": "UTTAR PRADESH STATE CO OPERATIVE BANK LIMITED LUCKNOW",
+      "category": "state_cooperative_bank",
+      "categories": [
+        "state_cooperative_bank"
+      ],
+      "websites": [],
+      "hostnames": [],
+      "address": "2, M.G.Road, P.B.No.174, Lucknow - 226 001., Uttar Pradesh",
+      "sourceHeadings": [
+        "State Co-operative Banks"
+      ]
+    },
+    {
+      "id": "bank_uttarakhand_gramin_bank",
+      "name": "Uttarakhand Gramin Bank",
+      "nameNormalized": "UTTARAKHAND GRAMIN BANK",
+      "nameCore": "UTTARAKHAND GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "https://ukgb.bank.in/"
+      ],
+      "hostnames": [
+        "ukgb.bank.in"
+      ],
+      "address": "8A, IT Park, Sahastradhara Road, Dehradun - 248013",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_west_bengal_gramin_bank",
+      "name": "West Bengal Gramin Bank",
+      "nameNormalized": "WEST BENGAL GRAMIN BANK",
+      "nameCore": "WEST BENGAL GRAMIN BANK",
+      "category": "regional_rural_bank",
+      "categories": [
+        "regional_rural_bank"
+      ],
+      "websites": [
+        "https://www.wbgb.bank.in/"
+      ],
+      "hostnames": [
+        "wbgb.bank.in"
+      ],
+      "address": "Head Office, BMC House, NH-34, Chuanpur, P.O- Chaltia, Dist.- Murshidabad, West Bengal 742407",
+      "sourceHeadings": [
+        "Name of the RRB",
+        "Regional Rural Banks"
+      ]
+    },
+    {
+      "id": "bank_woori_bank",
+      "name": "Woori Bank",
+      "nameNormalized": "WOORI BANK",
+      "nameCore": "WOORI BANK",
+      "category": "foreign_bank",
+      "categories": [
+        "foreign_bank"
+      ],
+      "websites": [
+        "https://go.wooribank.com/in/ib/main/IbMain.do"
+      ],
+      "hostnames": [
+        "go.wooribank.com"
+      ],
+      "address": "Unit No 601, 6th floor, Birla Centurion, Century Mills Compound, Pandurang Budhkar Marg, Worli, Mumbai - 400030, Maharashtra",
+      "sourceHeadings": [
+        "Foreign Banks (Branch Mode) – Address of Principle Branch",
+        "Foreign banks in India"
+      ]
+    },
+    {
+      "id": "bank_yes_bank",
+      "name": "YES Bank Limited",
+      "nameNormalized": "YES BANK LIMITED",
+      "nameCore": "YES BANK",
+      "category": "private_sector_bank",
+      "categories": [
+        "private_sector_bank"
+      ],
+      "websites": [
+        "https://www.yes.bank.in/"
+      ],
+      "hostnames": [
+        "yes.bank.in"
+      ],
+      "address": "YES Bank House, Off Western Express Highway,, Santacruz East, Mumbai City, Mumbai - 400055, Maharashtra",
+      "sourceHeadings": [
+        "Domestic Private Sector Banks",
+        "List of Private Sector Banks in India",
+        "Private Sector Banks – Indian Banks"
+      ]
+    }
+  ]
+}
