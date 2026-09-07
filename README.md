@@ -569,3 +569,6 @@ website look safe*, but **does the entity exist, is it recognised by the right R
 not cancelled, does it match the claimed company, does it match the digital identity, is it
 consistent with the loan offer, and is it free of serious scam signals** — with ML doing the one
 job ML is genuinely better at, and measured honestly on data it has never seen.
+
+## Contributor note
+This project uses evidence-based verification to help users assess lender legitimacy.
